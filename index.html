@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>L.L Israel Security — Elite Security & Travel Services</title>
+  <meta name="description" content="L.L Israel provides comprehensive executive protection, secure transportation, VIP concierge, and travel security services in Israel and internationally.">
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Heebo:wght@400;500;600;700&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Heebo:wght@400;500;600;700&display=swap">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- GSAP + ScrollTrigger + Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "L.L Israel Security",
+    "description": "Executive protection, secure transportation, VIP concierge and travel security services in Israel.",
+    "telephone": "+972543038542",
+    "email": "liranlouzon@llisrconsulting.com",
+    "openingHours": "Mo-Su 00:00-23:59",
+    "areaServed": "Israel"
+  }
+  </script>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark">L·L ISRAEL</div>
+</div>
+
+<div id="site-content">
+
+<!-- HEADER -->
+<header id="header">
+  <div class="container">
+    <nav class="nav-inner" aria-label="Main navigation">
+      <ul class="nav-links" role="list">
+        <li><a href="#services" data-i18n="nav_services">Services</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="lang-switcher" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button class="lang-btn" data-lang-btn="he" aria-pressed="false">עב</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-drawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- MOBILE DRAWER -->
+<div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+<nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
+  <button class="drawer-close" id="drawer-close" aria-label="Close menu">✕</button>
+  <a href="#services" data-i18n="nav_services">Services</a>
+  <a href="#about" data-i18n="nav_about">About</a>
+  <a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a>
+  <a href="#contact" data-i18n="nav_contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-content">
+
+      <h1 class="hero-h1">
+        <span data-i18n="hero_h1_line1">Professional Security.</span><br>
+        <em data-i18n="hero_h1_line2">Personal Service.</em>
+      </h1>
+      <p class="hero-sub" data-i18n="hero_sub">
+        L.L Israel provides security, secure transport, consulting, guided tours, and VIP escorting — professional services for individuals, families, delegations, and organizations in Israel and internationally.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero_cta1">Get in Touch</a>
+        <div class="hero-contact-icons" aria-label="Contact options">
+          <a href="tel:+972543038542" class="hero-ci-btn hero-ci-phone" aria-label="Call Us">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+          </a>
+          <a href="https://wa.me/972543038542" class="hero-ci-btn hero-ci-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+          <a href="#PLACEHOLDER_TELEGRAM_URL" class="hero-ci-btn hero-ci-tg" target="_blank" rel="noopener" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="sms:+972543038542" class="hero-ci-btn hero-ci-sms" aria-label="SMS">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </a>
+          <a href="mailto:liranlouzon@llisrconsulting.com" class="hero-ci-btn hero-ci-email" aria-label="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-badges">
+        <span class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+          <span data-i18n="hero_badge1">Security &amp; Travel Experts</span>
+        </span>
+        <span class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="hero_badge2">End-to-End Service</span>
+        </span>
+        <span class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          <span data-i18n="hero_badge3">Experienced Professionals</span>
+        </span>
+        <span class="hero-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <span data-i18n="hero_badge4">Israel &amp; International</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about-bg-section">
+  <div class="about-bg-overlay"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="about-text">
+      <span class="section-label fade-up" data-i18n="about_tag">About L.L Israel</span>
+      <h2 class="section-heading fade-up" data-i18n="about_title">About Us</h2>
+      <p class="fade-up" data-i18n="about_p1">We are a team of experienced professionals with backgrounds in government, security, logistics, and client services. Together with trusted partners across multiple sectors, we provide tailored solutions for companies, VIPs, families, and private clients in Israel and internationally.</p>
+      <p class="fade-up" data-i18n="about_p2">We assist with travel and trip planning, either managing services directly or connecting clients with the most suitable providers for their needs. We also conduct reliability and service checks on providers across different fields and help negotiate better terms and conditions for our clients. Our work is built on professionalism, discretion, reliability, and personalized service.</p>
+      <div class="about-badges fade-up">
+        <span class="about-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="about_badge2">Client Services Worldwide</span>
+        </span>
+        <span class="about-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="about_badge4">End to End Operations</span>
+        </span>
+        <span class="about-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="about_badge3">Multilingual Team</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <div class="container">
+    <div class="services-header text-center fade-up">
+      <span class="section-label" data-i18n="services_tag">What We Offer</span>
+      <h2 class="section-heading" data-i18n="services_title">Comprehensive Security, Services, and Logistics</h2>
+      <p class="section-body" data-i18n="services_sub">Tailored protection and logistics for every client requirement</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- Security Services and Consulting (featured, full-width) -->
+      <div class="service-card fade-left" data-spotlight data-num="01" style="transition-delay:0.05s">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div>
+          <div class="service-name" data-i18n="service1_name">Security Services and Consulting</div>
+          <p class="service-desc" data-i18n="service1_desc">From close protection agents and risk assessment to security surveys, loss prevention, investigation and surveillance, CCTV, anti-drone systems, and technological detection — our security and consulting services cover a wide range of needs, fully tailored to each client.</p>
+        </div>
+      </div>
+
+      <!-- Trip and Events Planning -->
+      <div class="service-card fade-right" data-spotlight data-num="02" style="transition-delay:0.1s">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <div class="service-name" data-i18n="service2_name">Trip and Events Planning</div>
+        <ul class="service-tags-list">
+          <li data-i18n="service2_tag1">Travel Advisory, Planning &amp; Recommendations</li>
+          <li data-i18n="service2_tag2">Guided Tours &amp; Experiences</li>
+          <li data-i18n="service2_tag3">Family &amp; Corporate Events</li>
+          <li data-i18n="service2_tag4">Bar Mitzvahs &amp; Special Celebrations</li>
+          <li data-i18n="service2_tag5">Activities &amp; Attractions</li>
+          <li data-i18n="service2_tag6">Restaurant &amp; Hotel Reservations</li>
+        </ul>
+      </div>
+
+      <!-- Transportation -->
+      <div class="service-card fade-left" data-spotlight data-num="03" style="transition-delay:0.15s">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <div class="service-name" data-i18n="service3_name">Transportation</div>
+        <p class="service-desc" data-i18n="service3_desc">Limousine and private chauffeur services, secure transit to and from airports, and armored transfers.</p>
+      </div>
+
+      <!-- VIP and Concierge (featured, full-width) -->
+      <div class="service-card fade-right" data-spotlight data-num="04" style="transition-delay:0.2s">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <div>
+          <div class="service-name" data-i18n="service4_name">VIP and Concierge</div>
+          <p class="service-desc" data-i18n="service4_desc">VIP meet &amp; assist, secure arrivals and departures, airport-to-destination transfers, and personalized concierge services throughout Israel and internationally.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TARGET AUDIENCE -->
+<section id="audience" class="section">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:3rem">
+      <span class="section-label" data-i18n="audience_tag">Who We Serve</span>
+      <h2 class="section-heading" data-i18n="audience_title">Protection for Every Client</h2>
+    </div>
+    <div class="audience-panels">
+
+      <div class="audience-panel active" data-panel="0" tabindex="0" role="button" aria-expanded="true">
+        <div class="panel-collapsed">
+          <span class="panel-number">01</span>
+          <span class="panel-label-vert" data-i18n="audience1_title">Government &amp; Officials</span>
+        </div>
+        <div class="panel-expanded">
+          <div class="audience-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7l9-4 9 4M4 21V7m16 14V7M9 21V12h6v9"/></svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience1_title">Government &amp; Officials</h3>
+          <p class="audience-desc" data-i18n="audience1_desc">Heads of state, senior officials, and government representatives requiring discreet, professional protection and secure logistics.</p>
+          <ul class="audience-tags">
+            <li data-i18n="audience1_tag1">Executive Protection</li>
+            <li data-i18n="audience1_tag2">Secure Transportation</li>
+            <li data-i18n="audience1_tag3">Risk Advisory</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="audience-panel" data-panel="1" tabindex="0" role="button" aria-expanded="false">
+        <div class="panel-collapsed">
+          <span class="panel-number">02</span>
+          <span class="panel-label-vert" data-i18n="audience2_title">Corporate &amp; Business</span>
+        </div>
+        <div class="panel-expanded">
+          <div class="audience-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience2_title">Corporate &amp; Business</h3>
+          <p class="audience-desc" data-i18n="audience2_desc">Business delegations, C-suite executives, and corporate groups needing secure, seamless travel support.</p>
+          <ul class="audience-tags">
+            <li data-i18n="audience2_tag1">Corporate Security</li>
+            <li data-i18n="audience2_tag2">Delegation Support</li>
+            <li data-i18n="audience2_tag3">Airport VIP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="audience-panel" data-panel="2" tabindex="0" role="button" aria-expanded="false">
+        <div class="panel-collapsed">
+          <span class="panel-number">03</span>
+          <span class="panel-label-vert" data-i18n="audience3_title">High Profile &amp; VIP</span>
+        </div>
+        <div class="panel-expanded">
+          <div class="audience-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience3_title">High Profile &amp; VIP</h3>
+          <p class="audience-desc" data-i18n="audience3_desc">Celebrities, public figures, and high-net-worth individuals requiring discreet, professional protection and concierge services.</p>
+          <ul class="audience-tags">
+            <li data-i18n="audience3_tag1">Close Protection</li>
+            <li data-i18n="audience3_tag2">Concierge Support</li>
+            <li data-i18n="audience3_tag3">Risk Advisory</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="audience-panel" data-panel="3" tabindex="0" role="button" aria-expanded="false">
+        <div class="panel-collapsed">
+          <span class="panel-number">04</span>
+          <span class="panel-label-vert" data-i18n="audience4_title">Families &amp; Delegations</span>
+        </div>
+        <div class="panel-expanded">
+          <div class="audience-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="audience-title" data-i18n="audience4_title">Families &amp; Delegations</h3>
+          <p class="audience-desc" data-i18n="audience4_desc">International families, group delegations, and travelers seeking safe, fully-supported experiences throughout Israel and beyond.</p>
+          <ul class="audience-tags">
+            <li data-i18n="audience4_tag1">Guided Tours</li>
+            <li data-i18n="audience4_tag2">Airport Transfers</li>
+            <li data-i18n="audience4_tag3">Concierge Support</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="testimonials" class="section">
+  <div class="experience-bg-overlay"></div>
+  <div class="container" style="position:relative;z-index:1;">
+    <div class="experience-layout">
+      <div class="experience-text fade-up">
+        <span class="section-label fade-up" data-i18n="testimonials_tag">The Team</span>
+        <h2 class="section-heading fade-up" data-i18n="testimonials_title">Our Experience</h2>
+        <p class="experience-p" data-i18n="exp_p1">Our team brings decades of combined experience across government, law enforcement, military, and private security. Over the years we have protected heads of state, corporate executives, high-profile individuals, international delegations, and families — delivering the same standard of care and discretion in every engagement.</p>
+        <p class="experience-p" data-i18n="exp_p2">We don't rely on scripts. Every client receives a solution built around their specific needs, risk profile, and schedule. The relationships we build are based on trust — and trust is earned through results.</p>
+        <div class="about-badges" style="margin-top:1.5rem">
+          <span class="about-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="exp_badge1">Government Cleared</span>
+          </span>
+          <span class="about-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="exp_badge2">15+ Years Combined Experience</span>
+          </span>
+          <span class="about-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span data-i18n="exp_badge3">International Operations</span>
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="text-center fade-up" style="margin-bottom:3rem">
+      <span class="section-label" data-i18n="faq_tag">Frequently Asked Questions</span>
+      <h2 class="section-heading" data-i18n="faq_title">Questions &amp; Answers</h2>
+    </div>
+    <div class="faq-list fade-up">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq1_q">Do you work internationally?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-i18n="faq1_a">Absolutely. While we specialize in many fields in Israel, some of our services are available worldwide at the same high standard.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq2_q">Who are your service providers and partners?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-i18n="faq2_a">Our security teams and service providers are made up of experienced professionals, many with backgrounds in law enforcement. All our partners across every field operate at the highest level.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq4_q">Do you offer multilingual services?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-i18n="faq4_a">Our team covers the majority of languages, subject to availability. Contact us with your language requirements and we will confirm coverage for your engagement.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span data-i18n="faq5_q">How do I choose the service that is right for me?</span>
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" hidden>
+          <p data-i18n="faq5_a">We are available to advise you for free about your needs — whether it is a security package, investigation, trip production, transportation, recommendations, or anything else.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA / CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-inner">
+
+      <div class="contact-text fade-up">
+        <span class="section-label" data-i18n="cta_tag">Get in Touch</span>
+        <h2 class="section-heading" data-i18n="cta_title">Free Initial Consultation</h2>
+        <p class="section-body" data-i18n="cta_sub">Tell us what you need and we will find the right solution for you.</p>
+
+        <div style="margin-top:2rem">
+          <div class="contact-icons-grid">
+            <a href="tel:+972543038542" class="cw-option cw-phone">
+              <span class="cw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+              </span>
+              <span data-i18n="cw_phone">Call Us</span>
+            </a>
+            <a href="https://wa.me/972543038542" class="cw-option cw-wa" target="_blank" rel="noopener">
+              <span class="cw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              </span>
+              <span data-i18n="cw_whatsapp">WhatsApp</span>
+            </a>
+            <a href="#PLACEHOLDER_TELEGRAM_URL" class="cw-option cw-telegram" target="_blank" rel="noopener">
+              <span class="cw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+              </span>
+              <span data-i18n="cw_telegram">Telegram</span>
+            </a>
+            <a href="sms:+972543038542" class="cw-option cw-sms">
+              <span class="cw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              </span>
+              <span data-i18n="cw_sms">SMS</span>
+            </a>
+            <a href="mailto:liranlouzon@llisrconsulting.com" class="cw-option cw-email">
+              <span class="cw-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <span data-i18n="cw_email">Email</span>
+            </a>
+          </div>
+
+          <div class="contact-info" style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem">
+            <a href="tel:+972543038542" style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;color:var(--color-text-mid);transition:color 0.2s" onmouseover="this.style.color='var(--color-accent-text)'" onmouseout="this.style.color='var(--color-text-mid)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+              <span dir="ltr">+972 54-303-8542</span>
+            </a>
+            <a href="mailto:liranlouzon@llisrconsulting.com" style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;color:var(--color-text-mid);transition:color 0.2s" onmouseover="this.style.color='var(--color-accent-text)'" onmouseout="this.style.color='var(--color-text-mid)'">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              liranlouzon@llisrconsulting.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap fade-up" style="transition-delay:0.1s">
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-field">
+            <label for="f-name" data-i18n="form_name_label">Your Name</label>
+            <input type="text" id="f-name" name="name" required autocomplete="name" data-i18n-placeholder="form_name" placeholder="Your Name">
+          </div>
+          <div class="form-field">
+            <label for="f-email" data-i18n="form_email_label">Email Address</label>
+            <input type="email" id="f-email" name="email" required autocomplete="email" data-i18n-placeholder="form_email" placeholder="Email Address">
+          </div>
+          <div class="form-field">
+            <label for="f-phone" data-i18n="form_phone_label">Phone Number</label>
+            <input type="tel" id="f-phone" name="phone" autocomplete="tel" data-i18n-placeholder="form_phone" placeholder="Phone Number">
+          </div>
+          <div class="form-field">
+            <label for="f-message" data-i18n="form_message_label">Message</label>
+            <textarea id="f-message" name="message" required data-i18n-placeholder="form_message" placeholder="How can we help you?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">
+            <span data-i18n="form_submit">Send Message</span>
+          </button>
+        </form>
+        <div class="form-success" id="form-success" role="status">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin:0 auto 0.75rem;display:block" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          <span data-i18n="form_success">Thank you! We will be in touch shortly.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <img src="images/logo-footer.png" alt="L.L. Israel Security" class="logo-img footer-logo-img">
+        <div class="footer-contact-list">
+          <a href="tel:+972543038542" class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+            <span dir="ltr">+972 54-303-8542</span>
+          </a>
+          <a href="mailto:liranlouzon@llisrconsulting.com" class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            liranlouzon@llisrconsulting.com
+          </a>
+          <a href="https://wa.me/972543038542" target="_blank" rel="noopener" class="footer-contact-item">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_nav_title">NAVIGATION</h4>
+        <ul>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
+          <li><a href="tos.html" data-i18n="footer_tos">Terms of Service</a></li>
+          <li><a href="#" id="open-a11y-statement" data-i18n="footer_a11y_statement">Accessibility Statement</a></li>
+          <li><a href="#" id="open-cookie-settings" data-i18n="footer_cookie_settings">Cookie Settings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact_title">CONTACT</h4>
+        <ul>
+          <li><a href="tel:+972523954958" dir="ltr">052-395-4958</a></li>
+          <li><a href="tel:+972543038542" dir="ltr">054-303-8542</a></li>
+          <li><a href="mailto:liranlouzon@llisrconsulting.com">Email Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_legal">© 2025 L.L Israel Security. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /#site-content -->
+
+<!-- FLOATING CONTACT WIDGET -->
+<div id="contact-widget" class="cw-root" role="complementary" aria-label="Contact options">
+  <div class="cw-panel" id="cw-panel" aria-hidden="true">
+    <p class="cw-heading" data-i18n="cw_title">How can we help?</p>
+    <div class="cw-options">
+      <a href="tel:+972543038542" class="cw-option cw-phone">
+        <span class="cw-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
+        </span>
+        <span data-i18n="cw_phone">Call Us</span>
+      </a>
+      <a href="https://wa.me/972543038542" class="cw-option cw-wa" target="_blank" rel="noopener">
+        <span class="cw-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </span>
+        <span data-i18n="cw_whatsapp">WhatsApp</span>
+      </a>
+      <a href="#PLACEHOLDER_TELEGRAM_URL" class="cw-option cw-telegram" target="_blank" rel="noopener">
+        <span class="cw-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+        </span>
+        <span data-i18n="cw_telegram">Telegram</span>
+      </a>
+      <a href="sms:+972543038542" class="cw-option cw-sms">
+        <span class="cw-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        </span>
+        <span data-i18n="cw_sms">SMS</span>
+      </a>
+      <a href="mailto:liranlouzon@llisrconsulting.com" class="cw-option cw-email">
+        <span class="cw-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </span>
+        <span data-i18n="cw_email">Email</span>
+      </a>
+    </div>
+  </div>
+  <button class="cw-trigger" id="cw-trigger" aria-expanded="false" aria-controls="cw-panel">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+    <span data-i18n="cw_trigger">Contact Us</span>
+  </button>
+</div>
+
+<!-- ACCESSIBILITY TOGGLE + PANEL -->
+<button id="a11y-toggle" data-i18n-aria-label="a11y_toggle_label" aria-label="Open accessibility menu" aria-expanded="false" aria-controls="a11y-panel" title="Accessibility">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+    <circle cx="12" cy="12" r="10"/>
+    <circle cx="12" cy="8" r="1.5" fill="currentColor" stroke="none"/>
+    <path d="M9 11h6M10 15l-1 3M14 15l1 3M12 11v4"/>
+  </svg>
+</button>
+
+<div id="a11y-panel" data-i18n-aria-label="a11y_panel_title" aria-label="Accessibility" role="dialog">
+  <div class="a11y-panel-header">
+    <h2 data-i18n="a11y_panel_title">Accessibility</h2>
+    <button id="a11y-close" data-i18n-aria-label="a11y_panel_close_label" aria-label="Close accessibility menu">✕</button>
+  </div>
+
+  <div class="a11y-section">
+    <div class="a11y-section-title" data-i18n="a11y_font_size_title">Text Size</div>
+    <div class="a11y-font-controls">
+      <button id="a11y-font-dec" aria-label="Decrease text size">A−</button>
+      <span id="a11y-font-display">M</span>
+      <button id="a11y-font-inc" aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+
+  <div class="a11y-section">
+    <div class="a11y-section-title" data-i18n="a11y_appearance_title">Appearance</div>
+    <div class="a11y-btn-grid">
+      <button class="a11y-toggle-btn" data-a11y-feature="highContrast" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20" opacity=".4"/><path d="M12 2a10 10 0 0 1 0 20z" fill="currentColor"/></svg>
+        <span data-i18n="a11y_btn_high_contrast">High Contrast</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="inverted" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <span data-i18n="a11y_btn_inverted">Invert Colors</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="greyscale" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+        <span data-i18n="a11y_btn_greyscale">Greyscale</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="readableFont" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+        <span data-i18n="a11y_btn_readable_font">Readable Font</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="a11y-section">
+    <div class="a11y-section-title" data-i18n="a11y_links_title">Links &amp; Headings</div>
+    <div class="a11y-btn-grid">
+      <button class="a11y-toggle-btn" data-a11y-feature="highlightLinks" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        <span data-i18n="a11y_btn_highlight_links">Highlight Links</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="highlightHeadings" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="4 6 4 4 20 4 20 6"/><line x1="12" y1="4" x2="12" y2="20"/><polyline points="4 20 8 20"/></svg>
+        <span data-i18n="a11y_btn_highlight_headings">Highlight Headings</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="a11y-section">
+    <div class="a11y-section-title" data-i18n="a11y_spacing_title">Spacing &amp; Cursor</div>
+    <div class="a11y-btn-grid">
+      <button class="a11y-toggle-btn" data-a11y-feature="lineSpacing" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        <span data-i18n="a11y_btn_line_spacing">Line Spacing</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="letterSpacing" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7l4 10M12 7l-4 10M16 7l4 10M20 17l-4-10"/><line x1="6" y1="13" x2="10" y2="13"/></svg>
+        <span data-i18n="a11y_btn_letter_spacing">Letter Spacing</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="largeCursor" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3l14 9-7 1-4 7z"/></svg>
+        <span data-i18n="a11y_btn_large_cursor">Large Cursor</span>
+      </button>
+      <button class="a11y-toggle-btn" data-a11y-feature="noAnim" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+        <span data-i18n="a11y_btn_no_anim">Stop Animations</span>
+      </button>
+    </div>
+  </div>
+
+  <button id="a11y-reset" data-i18n="a11y_reset">Reset All</button>
+</div>
+
+<!-- ACCESSIBILITY STATEMENT MODAL -->
+<div id="a11y-statement-overlay" class="modal-overlay" role="dialog" aria-modal="true" data-i18n-aria-label="footer_a11y_statement" aria-label="Accessibility Statement">
+  <div class="modal-box">
+    <button class="modal-close-btn" id="a11y-statement-close" aria-label="Close">✕</button>
+    <p class="modal-title lang-en">Accessibility Statement</p>
+    <p class="modal-title lang-he" hidden>הצהרת נגישות</p>
+
+    <!-- English content -->
+    <div class="a11y-statement-content lang-en">
+      <p>L.L Israel Security is committed to making its website accessible in accordance with WCAG 2.1 Level AA guidelines and applicable accessibility standards.</p>
+      <h3>Accessibility Features</h3>
+      <ul>
+        <li>Fully keyboard-navigable</li>
+        <li>Compatible with screen readers (NVDA, JAWS and similar)</li>
+        <li>Text size adjustment (increase/decrease)</li>
+        <li>High contrast, inverted colors, and greyscale modes</li>
+        <li>Link and heading highlighting</li>
+        <li>Large cursor mode</li>
+        <li>Animation pause</li>
+        <li>Line spacing and letter spacing adjustment</li>
+        <li>Readable font option</li>
+      </ul>
+      <h3>Known Limitations</h3>
+      <p>Some content areas may not yet be fully accessible. We are continuously working to improve accessibility across the site.</p>
+      <h3>Accessibility Widget Disclaimer</h3>
+      <p>The accessibility widget available on this site is a supplementary tool only and does not substitute for accessible development. It does not provide legal protection or constitute a certification of full accessibility.</p>
+      <h3>Contact Us About Accessibility</h3>
+      <p>If you encounter an accessibility issue, please contact us:</p>
+      <p>Email: <a href="mailto:liranlouzon@llisrconsulting.com">liranlouzon@llisrconsulting.com</a><br>
+      Phone: <a href="tel:+972543038542">054-303-8542</a></p>
+      <h3>Last Updated</h3>
+      <p>This accessibility statement was last updated: May 2026</p>
+    </div>
+
+    <!-- Hebrew content -->
+    <div class="a11y-statement-content lang-he" dir="rtl" hidden>
+      <p>חברת L.L Israel Security פועלת להנגשת אתר האינטרנט שלה בהתאם לתקן הישראלי ת"י 5568 ולהנחיות הנגישות לתוכן אינטרנט WCAG 2.1 ברמת AA, ובהתאם לתקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), תשע"ג-2013.</p>
+      <h3>התאמות הנגישות באתר</h3>
+      <ul>
+        <li>האתר מותאם לשימוש באמצעות מקלדת בלבד</li>
+        <li>האתר מותאם לקוראי מסך (NVDA, JAWS ודומיהם)</li>
+        <li>ניתן להגדיל ולהקטין טקסט</li>
+        <li>ניתן להפעיל ניגודיות גבוהה, ניגודיות הפוכה וגווני אפור</li>
+        <li>ניתן להדגיש קישורים וכותרות</li>
+        <li>ניתן להגדיל את סמן העכבר</li>
+        <li>ניתן לעצור אנימציות</li>
+        <li>ניתן להגדיל ריווח שורות וריווח אותיות</li>
+        <li>ניתן לעבור לפונט קריא</li>
+      </ul>
+      <h3>רכיבים שאינם נגישים במלואם</h3>
+      <p>ייתכן שחלק מהתכנים באתר אינם נגישים במלואם. אנו פועלים לשפר את הנגישות באופן שוטף.</p>
+      <h3>כפתור הנגישות</h3>
+      <p>כפתור הנגישות הזמין באתר הוא כלי עזר בלבד ואינו תחליף לפיתוח נגיש. הכפתור אינו מספק הגנה משפטית ואינו מהווה אישור לנגישות מלאה של האתר.</p>
+      <h3>יצירת קשר בנושא נגישות</h3>
+      <p>אם נתקלתם בבעיית נגישות באתר, אנא פנו אלינו:</p>
+      <p>דוא"ל: <a href="mailto:liranlouzon@llisrconsulting.com">liranlouzon@llisrconsulting.com</a><br>
+      טלפון: <a href="tel:+972543038542">054-303-8542</a></p>
+      <h3>תאריך עדכון אחרון</h3>
+      <p>הצהרת נגישות זו עודכנה לאחרונה בתאריך: מאי 2026</p>
+    </div>
+  </div>
+</div>
+
+<!-- COOKIE CONSENT BANNER -->
+<div id="cookie-banner" role="alert" aria-live="polite">
+  <p data-i18n="cookie_banner_text">This site uses essential cookies to function properly. You can manage your preferences at any time.</p>
+  <div class="cookie-actions">
+    <button id="cookie-accept-all" data-i18n="cookie_accept_all">Accept All</button>
+    <button id="cookie-reject" data-i18n="cookie_reject">Essential Only</button>
+    <button id="cookie-settings" data-i18n="cookie_settings_btn">Settings</button>
+  </div>
+</div>
+
+<!-- COOKIE PREFERENCES MODAL -->
+<div id="cookie-prefs-overlay" class="modal-overlay" role="dialog" aria-modal="true" data-i18n-aria-label="cookie_prefs_title" aria-label="Cookie Settings">
+  <div class="modal-box">
+    <button class="modal-close-btn" id="cookie-prefs-close" aria-label="Close">✕</button>
+    <p class="modal-title" data-i18n="cookie_prefs_title">Cookie Settings</p>
+
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-text">
+        <div class="cookie-pref-label" data-i18n="cookie_essential_label">Essential Cookies</div>
+        <div class="cookie-pref-desc" data-i18n="cookie_essential_desc">Required for the site to function. Cannot be disabled.</div>
+      </div>
+      <button class="cookie-toggle on" disabled aria-pressed="true" data-i18n-aria-label="cookie_essential_label" aria-label="Essential Cookies — always on"></button>
+    </div>
+
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-text">
+        <div class="cookie-pref-label" data-i18n="cookie_analytics_label">Analytics Cookies</div>
+        <div class="cookie-pref-desc" data-i18n="cookie_analytics_desc">Help us understand how visitors use the site.</div>
+      </div>
+      <button class="cookie-toggle" id="cookie-toggle-analytics" aria-pressed="false" data-i18n-aria-label="cookie_analytics_label" aria-label="Analytics Cookies"></button>
+    </div>
+
+    <div class="cookie-pref-row">
+      <div class="cookie-pref-text">
+        <div class="cookie-pref-label" data-i18n="cookie_marketing_label">Marketing Cookies</div>
+        <div class="cookie-pref-desc" data-i18n="cookie_marketing_desc">Used to track marketing campaigns.</div>
+      </div>
+      <button class="cookie-toggle" id="cookie-toggle-marketing" aria-pressed="false" data-i18n-aria-label="cookie_marketing_label" aria-label="Marketing Cookies"></button>
+    </div>
+
+    <div class="cookie-modal-footer">
+      <button id="cookie-save-prefs" data-i18n="cookie_save">Save Settings</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/app.js?v=5"></script>
+</body>
+</html>
