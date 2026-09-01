@@ -10,7 +10,7 @@ const TRANSLATIONS = {
   en: {
     nav_services: 'Services',
     nav_about: 'About',
-    nav_testimonials: 'Testimonials',
+    nav_experience: 'Experience',
     nav_contact: 'Contact',
     nav_cta: 'WhatsApp',
 
@@ -19,7 +19,7 @@ const TRANSLATIONS = {
     hero_tag: 'Licensed Security Professionals',
     hero_h1_line1: 'Professional Security.',
     hero_h1_line2: 'Personal Service.',
-    hero_sub: 'L.L Israel — Security Consulting & Services. We provide solutions in the fields of security consulting, security services, transportation, event production, travel planning, and guided tours. In addition, we offer concierge services, personal assistance (PA), VIP services, and due diligence and risk assessment services. Our services are tailored for government, corporate, and private-sector clients in Israel and worldwide.',
+    hero_sub: 'L.L Israel — Security Consulting & Services. We provide solutions in security consulting, security services, transportation, event production, travel planning, and guided tours. We also offer concierge services, personal assistance (PA), VIP services, due diligence, and risk assessment. Our services are tailored for government, corporate, and private-sector clients in Israel, with selected services available internationally.',
     hero_cta1: 'Get in Touch',
     hero_cta2: 'Contact Us',
     hero_badge1: 'Security & Travel Experts',
@@ -54,7 +54,7 @@ const TRANSLATIONS = {
     about_title: 'About Us',
     about_p1: 'We are a team of experienced professionals with backgrounds in government, security, logistics, and client services. Together with trusted partners across multiple sectors, we provide tailored solutions for companies, VIPs, families, and private clients in Israel and internationally.',
     about_p2: 'We assist with travel and trip planning, either managing services directly or connecting clients with the most suitable providers for their needs. We also conduct reliability and service checks on providers across different fields and help negotiate better terms and conditions for our clients. Our work is built on professionalism, discretion, reliability, and personalized service.',
-    about_badge2: 'Client Services Worldwide',
+    about_badge2: 'Israel-Based, International Support',
     about_badge4: 'End to End Operations',
     about_badge3: 'Multilingual Team',
 
@@ -74,8 +74,8 @@ const TRANSLATIONS = {
     audience3_tag1: 'Close Protection', audience3_tag2: 'Concierge Support', audience3_tag3: 'Risk Advisory',
     audience4_tag1: 'Guided Tours', audience4_tag2: 'Airport Transfers', audience4_tag3: 'Concierge Support',
 
-    testimonials_tag: 'The Team',
-    testimonials_title: 'Our Experience',
+    experience_tag: 'The Team',
+    experience_title: 'Our Experience',
     exp_p1: 'Our team brings decades of combined experience across government, law enforcement, military, and private security. Over the years we have protected heads of state, corporate executives, high-profile individuals, international delegations, and families — delivering the same standard of care and discretion in every engagement.',
     exp_p2: 'We don\'t rely on scripts. Every client receives a solution built around their specific needs, risk profile, and schedule. The relationships we build are based on trust — and trust is earned through results.',
     exp_badge1: 'Government Cleared',
@@ -85,7 +85,7 @@ const TRANSLATIONS = {
     faq_tag: 'Frequently Asked Questions',
     faq_title: 'Questions & Answers',
     faq1_q: 'Do you work internationally?',
-    faq1_a: 'Absolutely. While we specialize in many fields in Israel, some of our services are available worldwide at the same high standard.',
+    faq1_a: 'Yes. We are based in Israel, and selected services can also be arranged internationally through our professional network, subject to location and availability.',
     faq2_q: 'Who are your service providers and partners?',
     faq2_a: 'Our security teams and service providers are made up of experienced professionals, many with backgrounds in law enforcement. All our partners across every field operate at the highest level.',
     faq4_q: 'Do you offer multilingual services?',
@@ -119,7 +119,7 @@ const TRANSLATIONS = {
 
     footer_nav_title: 'NAVIGATION',
     footer_contact_title: 'CONTACT',
-    footer_legal: '© 2025 L.L Israel Security. All rights reserved.',
+    footer_legal: '© 2026 L.L Israel Security. All rights reserved.',
     footer_privacy: 'Privacy Policy',
     footer_tos: 'Terms of Service',
     footer_a11y_statement: 'Accessibility Statement',
@@ -161,7 +161,7 @@ const TRANSLATIONS = {
   he: {
     nav_services: 'שירותים',
     nav_about: 'אודות',
-    nav_testimonials: 'המלצות',
+    nav_experience: 'ניסיון',
     nav_contact: 'צור קשר',
     nav_cta: 'WhatsApp',
 
@@ -170,7 +170,7 @@ const TRANSLATIONS = {
     hero_tag: 'אנשי ביטחון מקצועיים ומורשים',
     hero_h1_line1: 'ביטחון מקצועי.',
     hero_h1_line2: 'שירות אישי.',
-    hero_sub: 'L.L Israel – ייעוץ ביטחוני ושירותים. אנו מספקים פתרונות בתחומי הייעוץ הביטחוני, האבטחה, התחבורה, הפקת אירועים, תכנון טיולים וסיורים מודרכים. בנוסף, אנו מציעים שירותי קונסיירז\', ליווי אישי (PA), שירותי VIP ושירותי בדיקות נאותות והערכת סיכונים. שירותינו מיועדים ללקוחות מהמגזר הממשלתי, העסקי והפרטי, בישראל וברחבי העולם.',
+    hero_sub: 'L.L Israel – ייעוץ ביטחוני ושירותים. אנו מספקים פתרונות בתחומי הייעוץ הביטחוני, האבטחה, התחבורה, הפקת אירועים, תכנון טיולים וסיורים מודרכים. בנוסף, אנו מציעים שירותי קונסיירז\', ליווי אישי (PA), שירותי VIP, בדיקות נאותות והערכת סיכונים. שירותינו מיועדים ללקוחות מהמגזר הממשלתי, העסקי והפרטי בישראל, ושירותים נבחרים זמינים גם בחו״ל.',
     hero_cta1: 'צור קשר',
     hero_cta2: 'צור קשר',
     hero_badge1: 'מומחי ביטחון ותיירות',
@@ -205,7 +205,7 @@ const TRANSLATIONS = {
     about_title: 'אודותינו',
     about_p1: 'L.L Israel היא חברת ייעוץ המתמחה בייעוץ ביטחוני, הפקת אירועים וטיולים, שירותי נסיעות, שירותי VIP, קונסיירז\' אישי ועסקי, ליווי אישי, תחבורה, בדיקות נאותות והערכת ספקים ונותני שירות. אנו מספקים פתרונות מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים בישראל וברחבי העולם, תוך שיתוף פעולה עם אנשי מקצוע וספקים מובילים במגוון תחומים.',
     about_p2: 'שירותינו כוללים תכנון, תיאום וניהול שירותים ופרויקטים, איתור וחיבור לספקים המתאימים ביותר לצורכי הלקוח, ביצוע בדיקות אמינות ונאותות, וליווי מקצועי משלב התכנון ועד לביצוע. הניסיון, הקשרים המקצועיים והמחויבות לשירות אישי מאפשרים לנו לספק לכל לקוח פתרון מקצועי, דיסקרטי ויעיל, תוך חיסכון בזמן, במשאבים ובעלויות.',
-    about_badge2: 'שירות לקוחות ברחבי העולם',
+    about_badge2: 'בסיס בישראל, תמיכה בינלאומית',
     about_badge4: 'פעילות מקצה לקצה',
     about_badge3: 'צוות רב-לשוני',
 
@@ -225,8 +225,8 @@ const TRANSLATIONS = {
     audience3_tag1: 'הגנה צמודה', audience3_tag2: 'שירות קונסיירז׳', audience3_tag3: 'ייעוץ סיכונים',
     audience4_tag1: 'סיורים מודרכים', audience4_tag2: 'העברות שדה תעופה', audience4_tag3: 'שירות קונסיירז׳',
 
-    testimonials_tag: 'הצוות',
-    testimonials_title: 'הניסיון שלנו',
+    experience_tag: 'הצוות',
+    experience_title: 'הניסיון שלנו',
     exp_p1: 'הצוות שלנו מביא עמו עשרות שנים של ניסיון משולב בממשל, אכיפת חוק, צבא וביטחון פרטי. לאורך השנים הגנו על ראשי מדינות, מנהלים בכירים, אישים בולטים, משלחות בינלאומיות ומשפחות — תוך שמירה על אותה רמה של מקצועיות ושיקול דעת בכל התקשרות.',
     exp_p2: 'אנחנו לא עובדים לפי תסריטים. כל לקוח מקבל פתרון המותאם לצרכיו הספציפיים, פרופיל הסיכון ולוח הזמנים שלו. הקשרים שאנו בונים מבוססים על אמון — ואמון נרכש דרך תוצאות.',
     exp_badge1: 'בעלי אישור ביטחוני',
@@ -236,7 +236,7 @@ const TRANSLATIONS = {
     faq_tag: 'שאלות נפוצות',
     faq_title: 'שאלות ותשובות',
     faq1_q: 'האם אתם עובדים בינלאומית?',
-    faq1_a: 'בהחלט. למרות שאנחנו מתמחים בתחומים רבים בישראל, חלק מהשירותים שלנו זמינים ברחבי העולם באותה רמה גבוהה.',
+    faq1_a: 'כן. אנו פועלים מישראל, ושירותים נבחרים ניתנים לתיאום גם בחו״ל באמצעות הרשת המקצועית שלנו, בהתאם למיקום ולזמינות.',
     faq2_q: 'מי הם נותני השירות והספקים שלכם?',
     faq2_a: 'צוותי האבטחה וספקי השירות שלנו מורכבים ממקצוענים ובעלי ניסיון יוצאי מערכות החוק ובעלי ניסיון בתחומם. השותפים שלנו כולם ברמה הגבוהה ביותר.',
     faq4_q: 'האם אתם מציעים שירות רב-לשוני?',
@@ -270,7 +270,7 @@ const TRANSLATIONS = {
 
     footer_nav_title: 'ניווט',
     footer_contact_title: 'צור קשר',
-    footer_legal: '© 2025 L.L Israel Security. כל הזכויות שמורות.',
+    footer_legal: '© 2026 L.L Israel Security. כל הזכויות שמורות.',
     footer_privacy: 'מדיניות פרטיות',
     footer_tos: 'תנאי שימוש',
     footer_a11y_statement: 'הצהרת נגישות',
@@ -551,8 +551,10 @@ function initForm() {
   const form    = document.getElementById('contact-form');
   const success = document.getElementById('form-success');
   if (!form) return;
+  const loadedAt = Date.now();
+  const endpoint = 'https://script.google.com/macros/s/AKfycby_Cnt7Y1mxcPiZrs0yIa2KIYF20xD1hJNxOwBR15D5nJIC4JKyIFmtMOEJLqpxR7-yzQ/exec';
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const name    = form.querySelector('#f-name').value.trim();
     const email   = form.querySelector('#f-email').value.trim();
@@ -560,12 +562,22 @@ function initForm() {
 
     if (!name || !email || !message) return;
 
-    const subject = encodeURIComponent('L.L Israel Security — Website Inquiry');
-    const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`);
-    window.location.href = `mailto:liranlouzon@llisrconsulting.com?subject=${subject}&body=${body}`;
+    const submitButton = form.querySelector('button[type="submit"]');
+    submitButton.disabled = true;
 
-    form.style.display = 'none';
-    success.style.display = 'block';
+    const data = new FormData(form);
+    data.set('language', document.documentElement.lang || 'en');
+    data.set('pageUrl', window.location.href);
+    data.set('loadedAt', String(loadedAt));
+
+    try {
+      await fetch(endpoint, { method: 'POST', mode: 'no-cors', body: data });
+      form.style.display = 'none';
+      success.style.display = 'block';
+    } catch (error) {
+      submitButton.disabled = false;
+      window.location.href = `mailto:liranlouzon@llisrconsulting.com?subject=${encodeURIComponent('L.L Israel Security — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
+    }
   });
 }
 
@@ -808,84 +820,6 @@ function initCookieConsent() {
 }
 
 /* === INIT ALL === */
-function initTestimonialsCarousel() {
-  const track = document.getElementById('tc-track');
-  if (!track) return;
-  const bars = document.querySelectorAll('.tc-bar');
-  const cards = track.querySelectorAll('.testimonial-card');
-  const total = cards.length;
-  let current = 0;
-  let timer = null;
-
-  function activateBar(index) {
-    bars.forEach((b, i) => {
-      b.classList.remove('active');
-      b.setAttribute('aria-selected', 'false');
-      if (i === index) {
-        void b.offsetWidth; // force reflow to restart animation
-        b.classList.add('active');
-        b.setAttribute('aria-selected', 'true');
-      }
-    });
-  }
-
-  function goTo(index) {
-    current = (index + total) % total;
-    const isRTL = document.documentElement.dir === 'rtl';
-    const offset = isRTL ? current * 100 : -(current * 100);
-    track.style.transform = `translateX(${offset}%)`;
-    activateBar(current);
-  }
-
-  function startAuto() {
-    timer = setInterval(() => goTo(current + 1), 4000);
-  }
-
-  function resetAuto() {
-    clearInterval(timer);
-    startAuto();
-  }
-
-  bars.forEach(bar => {
-    bar.addEventListener('click', () => {
-      goTo(parseInt(bar.dataset.index, 10));
-      resetAuto();
-    });
-  });
-
-  const prevBtn = document.getElementById('tc-prev');
-  const nextBtn = document.getElementById('tc-next');
-  if (prevBtn) prevBtn.addEventListener('click', () => {
-    const isRTL = document.documentElement.dir === 'rtl';
-    goTo(current + (isRTL ? 1 : -1));
-    resetAuto();
-  });
-  if (nextBtn) nextBtn.addEventListener('click', () => {
-    const isRTL = document.documentElement.dir === 'rtl';
-    goTo(current + (isRTL ? -1 : 1));
-    resetAuto();
-  });
-
-  // Swipe support
-  let touchStartX = 0;
-  track.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
-  track.addEventListener('touchend', e => {
-    const diff = touchStartX - e.changedTouches[0].clientX;
-    const isRTL = document.documentElement.dir === 'rtl';
-    if (Math.abs(diff) > 40) {
-      goTo(current + (diff > 0 ? (isRTL ? -1 : 1) : (isRTL ? 1 : -1)));
-      resetAuto();
-    }
-  }, { passive: true });
-
-  // Pause on hover
-  track.addEventListener('mouseenter', () => clearInterval(timer));
-  track.addEventListener('mouseleave', () => { if (!prefersReduced) startAuto(); });
-
-  goTo(0);
-  if (!prefersReduced) startAuto();
-}
-
 function initAudiencePanels() {
   const panels = document.querySelectorAll('.audience-panel');
   if (!panels.length) return;
