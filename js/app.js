@@ -79,7 +79,7 @@ const TRANSLATIONS = {
     exp_p1: 'Our team brings decades of combined experience across government, law enforcement, military, and private security. Over the years we have protected heads of state, corporate executives, high-profile individuals, international delegations, and families — delivering the same standard of care and discretion in every engagement.',
     exp_p2: 'We don\'t rely on scripts. Every client receives a solution built around their specific needs, risk profile, and schedule. The relationships we build are based on trust — and trust is earned through results.',
     exp_badge1: 'Government Cleared',
-    exp_badge2: '15+ Years Combined Experience',
+    exp_badge2: '20+ Years of Experience — Combined with a New Generation',
     exp_badge3: 'International Operations',
 
     faq_tag: 'Frequently Asked Questions',
@@ -87,7 +87,7 @@ const TRANSLATIONS = {
     faq1_q: 'Do you work internationally?',
     faq1_a: 'Yes. We are based in Israel, and selected services can also be arranged internationally through our professional network, subject to location and availability.',
     faq2_q: 'Who are your service providers and partners?',
-    faq2_a: 'Our security teams and service providers are made up of experienced professionals, many with backgrounds in law enforcement. All our partners across every field operate at the highest level.',
+    faq2_a: 'Our security personnel are trained, experienced professionals with backgrounds in law enforcement. All our partners across every field operate at the highest level.',
     faq4_q: 'Do you offer multilingual services?',
     faq4_a: 'Our team covers the majority of languages, subject to availability. Contact us with your language requirements and we will confirm coverage for your engagement.',
     faq5_q: 'How do I choose the service that is right for me?',
@@ -230,7 +230,7 @@ const TRANSLATIONS = {
     exp_p1: 'הצוות שלנו מביא עמו עשרות שנים של ניסיון משולב בממשל, אכיפת חוק, צבא וביטחון פרטי. לאורך השנים הגנו על ראשי מדינות, מנהלים בכירים, אישים בולטים, משלחות בינלאומיות ומשפחות — תוך שמירה על אותה רמה של מקצועיות ושיקול דעת בכל התקשרות.',
     exp_p2: 'אנחנו לא עובדים לפי תסריטים. כל לקוח מקבל פתרון המותאם לצרכיו הספציפיים, פרופיל הסיכון ולוח הזמנים שלו. הקשרים שאנו בונים מבוססים על אמון — ואמון נרכש דרך תוצאות.',
     exp_badge1: 'בעלי אישור ביטחוני',
-    exp_badge2: 'מעל 15 שנות ניסיון משולב',
+    exp_badge2: 'מעל 20 שנות ניסיון — בשילוב דור צעיר',
     exp_badge3: 'פעילות בינלאומית',
 
     faq_tag: 'שאלות נפוצות',
