@@ -1,28 +1,28 @@
 /* =====================================================
    L.L Israel Security — style.css
-   Trust-focused blue premium theme | EN + HE (RTL) ready
+   Light premium theme with subtle blue details | EN + HE (RTL) ready
    ===================================================== */
 
 /* === TOKENS === */
 :root {
-  --color-accent:      #2563A8;
-  --color-accent-dk:   #173F73;
+  --color-accent:      #C9A84C;
+  --color-accent-dk:   #A8893A;
   --color-accent-lt:   #8CC8F2;
-  --accent-rgb:        37, 99, 168;
-  --color-accent-text: #174D82;
+  --accent-rgb:        201, 168, 76;
+  --color-accent-text: #7A5800;
 
-  --color-bg:          #F4F8FC;
+  --color-bg:          #F5F3EE;
   --color-surface:     #FFFFFF;
-  --color-surface-alt: #E7F1FA;
-  --color-stats-bg:    #0B2038;
+  --color-surface-alt: #F0EDE8;
+  --color-stats-bg:    #252A38;
 
-  --color-text:        #0B1F35;
-  --color-text-mid:    #425B73;
-  --color-text-dim:    #6D8297;
+  --color-text:        #1A1C22;
+  --color-text-mid:    #5A6070;
+  --color-text-dim:    #8A9098;
 
   --color-border:        rgba(0,0,0,0.08);
   --color-border-subtle: rgba(0,0,0,0.04);
-  --color-border-accent: rgba(37,99,168,0.32);
+  --color-border-accent: rgba(201,168,76,0.30);
 
   --font-display: 'Barlow Condensed', sans-serif;
   --font: 'DM Sans', sans-serif;
@@ -164,7 +164,7 @@ header {
   border-bottom: 1px solid transparent;
 }
 header.scrolled {
-  background: rgba(244,248,252,0.94);
+  background: rgba(245,243,238,0.92);
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   padding: 0.85rem 0;
@@ -399,7 +399,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
 
 .btn-primary {
   background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dk));
-  color: #FFFFFF;
+  color: #1A1C22;
 }
 .btn-primary:hover {
   transform: translateY(-2px);
@@ -719,11 +719,11 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .about-bg-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, rgba(244,248,252,0.55) 0%, rgba(244,248,252,0.90) 45%, rgba(244,248,252,0.97) 100%);
+  background: linear-gradient(to left, rgba(245,243,238,0.55) 0%, rgba(245,243,238,0.88) 45%, rgba(245,243,238,0.96) 100%);
   z-index: 0;
 }
 [dir="rtl"] .about-bg-overlay {
-  background: linear-gradient(to right, rgba(244,248,252,0.55) 0%, rgba(244,248,252,0.90) 45%, rgba(244,248,252,0.97) 100%);
+  background: linear-gradient(to right, rgba(245,243,238,0.55) 0%, rgba(245,243,238,0.88) 45%, rgba(245,243,238,0.96) 100%);
 }
 .about-text {
   max-width: 620px;
@@ -894,11 +894,11 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .experience-bg-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to left, rgba(244,248,252,0.48) 0%, rgba(244,248,252,0.90) 45%, rgba(244,248,252,0.97) 100%);
+  background: linear-gradient(to left, rgba(245,243,238,0.45) 0%, rgba(245,243,238,0.88) 45%, rgba(245,243,238,0.96) 100%);
   z-index: 0;
 }
 [dir="rtl"] .experience-bg-overlay {
-  background: linear-gradient(to right, rgba(244,248,252,0.48) 0%, rgba(244,248,252,0.90) 45%, rgba(244,248,252,0.97) 100%);
+  background: linear-gradient(to right, rgba(245,243,238,0.45) 0%, rgba(245,243,238,0.88) 45%, rgba(245,243,238,0.96) 100%);
 }
 .experience-layout {
   max-width: 620px;
@@ -1074,8 +1074,8 @@ footer .footer-logo-img {
   color: rgba(240,240,240,0.65);
   transition: color 0.2s;
 }
-.footer-contact-item:hover { color: #2563A8; }
-.footer-contact-item svg { flex-shrink: 0; color: #2563A8; }
+.footer-contact-item:hover { color: #C9A84C; }
+.footer-contact-item svg { flex-shrink: 0; color: #C9A84C; }
 .footer-col h4 {
   font-size: 0.8125rem;
   font-weight: 600;
@@ -1089,7 +1089,7 @@ footer .footer-logo-img {
   color: rgba(240,240,240,0.65);
   transition: color 0.2s;
 }
-.footer-col a:hover { color: #2563A8; }
+.footer-col a:hover { color: #C9A84C; }
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding-top: 1.5rem;
@@ -1370,8 +1370,8 @@ footer .footer-logo-img {
   font-family: var(--font);
 }
 .a11y-toggle-btn svg { flex-shrink: 0; }
-.a11y-toggle-btn:hover { border-color: var(--color-accent); color: #0B1F35; background: rgba(37,99,168,0.06); }
-.a11y-toggle-btn.active { border-color: var(--color-accent); background: rgba(37,99,168,0.14); color: #174D82; font-weight: 600; }
+.a11y-toggle-btn:hover { border-color: var(--color-accent); color: #1A1C22; background: rgba(201,168,76,0.06); }
+.a11y-toggle-btn.active { border-color: var(--color-accent); background: rgba(201,168,76,0.14); color: #7A5800; font-weight: 600; }
 
 #a11y-reset {
   width: 100%;
@@ -1556,7 +1556,7 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   transition: transform 0.2s;
 }
-.cookie-toggle.on { background: #2563A8; }
+.cookie-toggle.on { background: #C9A84C; }
 .cookie-toggle.on::after { transform: translateX(20px); }
 .cookie-toggle:disabled { opacity: 0.55; cursor: not-allowed; }
 .cookie-modal-footer {
