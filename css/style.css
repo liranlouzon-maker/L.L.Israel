@@ -188,7 +188,7 @@ header.scrolled {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.15em;
-  color: #F0F0F0;
+  color: #173F73;
   transition: color 0.35s;
 }
 .logo-sub {
@@ -219,14 +219,14 @@ header.scrolled .logo-sub  { color: var(--color-accent-text); }
 .nav-links a {
   font-size: 0.875rem;
   font-weight: 500;
-  color: rgba(240,240,240,0.75);
+  color: #425B73;
   padding: 0.5rem 0.75rem;
   border-radius: var(--radius);
   transition: color 0.2s, background 0.2s;
 }
 .nav-links a:hover,
 .nav-links a.active {
-  color: #F0F0F0;
+  color: #173F73;
   background: rgba(255,255,255,0.1);
 }
 header.scrolled .nav-links a { color: var(--color-text-mid); }
@@ -257,7 +257,7 @@ header.scrolled .lang-switcher {
 .lang-btn {
   font-size: 0.75rem;
   font-weight: 600;
-  color: rgba(240,240,240,0.65);
+  color: #425B73;
   padding: 0.3rem 0.65rem;
   border-radius: var(--radius-pill);
   transition: all 0.2s;
@@ -266,7 +266,7 @@ header.scrolled .lang-switcher {
 }
 .lang-btn.active {
   background: rgba(var(--accent-rgb),0.18);
-  color: #8CC8F2;
+  color: #2563A8;
 }
 header.scrolled .lang-btn { color: var(--color-text-dim); }
 header.scrolled .lang-btn.active { color: var(--color-accent-text); }
@@ -303,7 +303,7 @@ header.scrolled .lang-btn.active { color: var(--color-accent-text); }
   display: block;
   width: 22px;
   height: 2px;
-  background: #F0F0F0;
+  background: #173F73;
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -475,7 +475,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.1em;
-  color: #8CC8F2;
+  color: #173F73;
   border: 1px solid rgba(140,200,242,0.34);
   background: rgba(37,99,168,0.16);
   padding: 0.4rem 1rem;
@@ -496,16 +496,16 @@ header.scrolled .hamburger span { background: var(--color-text); }
   font-weight: 800;
   line-height: 1.05;
   letter-spacing: -0.01em;
-  color: #F0F0F0;
+  color: #173F73;
   margin-bottom: 1.5rem;
 }
 .hero-h1 em {
   font-style: normal;
-  color: #8CC8F2;
+  color: #2563A8;
 }
 .hero-sub {
   font-size: 1.0625rem;
-  color: rgba(240,240,240,0.82);
+  color: #425B73;
   line-height: 1.75;
   max-width: 60ch;
   margin-bottom: 2.5rem;
@@ -532,7 +532,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
   gap: 0.4rem;
   font-size: 0.8125rem;
   font-weight: 500;
-  color: rgba(240,240,240,0.72);
+  color: #425B73;
   border: 1px solid rgba(255,255,255,0.1);
   background: rgba(255,255,255,0.04);
   padding: 0.4rem 0.9rem;
