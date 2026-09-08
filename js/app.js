@@ -1,5 +1,5 @@
 /* =====================================================
-   L.L Israel Security — app.js
+   LLISR — app.js
    ===================================================== */
 
 const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -19,7 +19,7 @@ const TRANSLATIONS = {
     hero_tag: 'Licensed Security Professionals',
     hero_h1_line1: 'Professional Security.',
     hero_h1_line2: 'Personal Service.',
-    hero_sub: 'L.L Israel is a consulting company specializing in security consulting, event and trip production, travel services, VIP services, personal and business concierge, personal assistance, transportation, due diligence, and provider assessment. We provide tailored solutions for private, corporate, and institutional clients in Israel and worldwide.',
+    hero_sub: 'LLISR is a consulting company specializing in security consulting, event and trip production, travel services, VIP services, personal and business concierge, personal assistance, transportation, due diligence, and provider assessment. We provide tailored solutions for private, corporate, and institutional clients in Israel and worldwide.',
     hero_cta1: 'Get in Touch',
     hero_cta2: 'Contact Us',
     hero_badge1: 'Security & Travel Experts',
@@ -50,9 +50,9 @@ const TRANSLATIONS = {
     service4_name: 'VIP Concierge & Guest Services',
     service4_desc: 'Personalized concierge and personal assistant (PA) services, tailored support for VIPs and distinguished guests, airport meet & assist and lounge arrangements, secure arrivals and departures, hotel and restaurant bookings, and expert advisory for delivering unique, high-end experiences and exceptional service standards throughout Israel and internationally.',
 
-    about_tag: 'About L.L Israel',
+    about_tag: 'About LLISR',
     about_title: 'About Us',
-    about_p1: 'L.L Israel is a consulting company specializing in security consulting, event and trip production, travel services, VIP services, personal and business concierge, personal assistance, transportation, due diligence, and the assessment of suppliers and service providers. We provide tailored solutions for private, corporate, and institutional clients in Israel and worldwide, in cooperation with leading professionals and providers across a wide range of fields.',
+    about_p1: 'LLISR is a consulting company specializing in security consulting, event and trip production, travel services, VIP services, personal and business concierge, personal assistance, transportation, due diligence, and the assessment of suppliers and service providers. We provide tailored solutions for private, corporate, and institutional clients in Israel and worldwide, in cooperation with leading professionals and providers across a wide range of fields.',
     about_p2: 'Our services include the planning, coordination, and management of services and projects; identifying and connecting clients with the providers best suited to their needs; conducting reliability and due diligence checks; and providing professional guidance from planning through execution. Our experience, professional network, and commitment to personal service enable us to deliver professional, discreet, and efficient solutions while saving clients time, resources, and costs.',
     about_badge2: 'Israel-Based, International Support',
     about_badge4: 'End to End Operations',
@@ -119,7 +119,7 @@ const TRANSLATIONS = {
 
     footer_nav_title: 'NAVIGATION',
     footer_contact_title: 'CONTACT',
-    footer_legal: '© 2026 L.L Israel Security. All rights reserved.',
+    footer_legal: '© 2026 LLISR. All rights reserved.',
     footer_privacy: 'Privacy Policy',
     footer_tos: 'Terms of Service',
     footer_a11y_statement: 'Accessibility Statement',
@@ -170,7 +170,7 @@ const TRANSLATIONS = {
     hero_tag: 'אנשי ביטחון מקצועיים ומורשים',
     hero_h1_line1: 'ביטחון מקצועי.',
     hero_h1_line2: 'שירות אישי.',
-    hero_sub: 'L.L Israel היא חברת ייעוץ המתמחה בייעוץ ביטחוני, הפקת אירועים וטיולים, שירותי נסיעות, שירותי VIP, קונסיירז\' אישי ועסקי, ליווי אישי, תחבורה, בדיקות נאותות והערכת ספקים ונותני שירות. אנו מספקים פתרונות מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים בישראל וברחבי העולם.',
+    hero_sub: 'LLISR היא חברת ייעוץ המתמחה בייעוץ ביטחוני, הפקת אירועים וטיולים, שירותי נסיעות, שירותי VIP, קונסיירז\' אישי ועסקי, ליווי אישי, תחבורה, בדיקות נאותות והערכת ספקים ונותני שירות. אנו מספקים פתרונות מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים בישראל וברחבי העולם.',
     hero_cta1: 'צור קשר',
     hero_cta2: 'צור קשר',
     hero_badge1: 'מומחי ביטחון ותיירות',
@@ -201,9 +201,9 @@ const TRANSLATIONS = {
     service4_name: 'שירותי קונסיירז\' וליווי אורחים',
     service4_desc: 'שירותי קונסיירז\' ועוזר אישי (PA) בהתאמה אישית, ליווי ותמיכה המותאמים לאנשי VIP ולאורחים מכובדים, שירותי קבלת פנים וליווי בשדה התעופה ותיאום טרקלינים, תכנון וניהול הגעות ועזיבות, הזמנת מלונות ומסעדות, וכן ייעוץ מקצועי למתן חוויית אירוח ושירות ייחודית ברמה הגבוהה ביותר, בישראל וברחבי העולם.',
 
-    about_tag: 'אודות L.L Israel',
+    about_tag: 'אודות LLISR',
     about_title: 'אודותינו',
-    about_p1: 'L.L Israel היא חברת ייעוץ המתמחה בייעוץ ביטחוני, הפקת אירועים וטיולים, שירותי נסיעות, שירותי VIP, קונסיירז\' אישי ועסקי, ליווי אישי, תחבורה, בדיקות נאותות והערכת ספקים ונותני שירות. אנו מספקים פתרונות מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים בישראל וברחבי העולם, תוך שיתוף פעולה עם אנשי מקצוע וספקים מובילים במגוון תחומים.',
+    about_p1: 'LLISR היא חברת ייעוץ המתמחה בייעוץ ביטחוני, הפקת אירועים וטיולים, שירותי נסיעות, שירותי VIP, קונסיירז\' אישי ועסקי, ליווי אישי, תחבורה, בדיקות נאותות והערכת ספקים ונותני שירות. אנו מספקים פתרונות מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים בישראל וברחבי העולם, תוך שיתוף פעולה עם אנשי מקצוע וספקים מובילים במגוון תחומים.',
     about_p2: 'שירותינו כוללים תכנון, תיאום וניהול שירותים ופרויקטים, איתור וחיבור לספקים המתאימים ביותר לצורכי הלקוח, ביצוע בדיקות אמינות ונאותות, וליווי מקצועי משלב התכנון ועד לביצוע. הניסיון, הקשרים המקצועיים והמחויבות לשירות אישי מאפשרים לנו לספק לכל לקוח פתרון מקצועי, דיסקרטי ויעיל, תוך חיסכון בזמן, במשאבים ובעלויות.',
     about_badge2: 'בסיס בישראל, תמיכה בינלאומית',
     about_badge4: 'פעילות מקצה לקצה',
@@ -270,7 +270,7 @@ const TRANSLATIONS = {
 
     footer_nav_title: 'ניווט',
     footer_contact_title: 'צור קשר',
-    footer_legal: '© 2026 L.L Israel Security. כל הזכויות שמורות.',
+    footer_legal: '© 2026 LLISR. כל הזכויות שמורות.',
     footer_privacy: 'מדיניות פרטיות',
     footer_tos: 'תנאי שימוש',
     footer_a11y_statement: 'הצהרת נגישות',
@@ -576,7 +576,7 @@ function initForm() {
       success.style.display = 'block';
     } catch (error) {
       submitButton.disabled = false;
-      window.location.href = `mailto:liranlouzon@llisrconsulting.com?subject=${encodeURIComponent('L.L Israel Security — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
+      window.location.href = `mailto:liranlouzon@llisrconsulting.com?subject=${encodeURIComponent('LLISR — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
     }
   });
 }
