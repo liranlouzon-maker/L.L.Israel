@@ -504,11 +504,16 @@ header.scrolled .hamburger span { background: var(--color-text); }
   color: #2563A8;
 }
 .hero-sub {
+  white-space: pre-line;
   font-size: 1.0625rem;
   color: #425B73;
   line-height: 1.75;
   max-width: 60ch;
   margin-bottom: 2.5rem;
+}
+
+.company-description {
+  white-space: pre-line;
 }
 .hero-ctas {
   display: flex;
