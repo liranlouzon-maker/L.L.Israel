@@ -116,9 +116,9 @@
     <img src="images/logo-llisr.svg" alt="LLISR" style="width:60px;height:auto;display:block;">
   </a>
   <div style="display:flex;align-items:center;gap:1rem;">
-    <div class="legal-lang-toggle">
-      <button class="legal-lang-btn active" data-legal-lang="en">EN</button>
-      <button class="legal-lang-btn" data-legal-lang="he">עב</button>
+    <div class="legal-lang-toggle" role="group" aria-label="Language selector">
+      <button type="button" class="legal-lang-btn active" data-legal-lang="en" aria-pressed="true">EN</button>
+      <button type="button" class="legal-lang-btn" data-legal-lang="he" aria-pressed="false">עב</button>
     </div>
     <a href="index.html" class="legal-back" id="back-link">← Back to site</a>
   </div>
@@ -250,7 +250,7 @@
     <p>האתר משתמש כעת באחסון מקומי בדפדפן רק לצורך שמירת העדפות שפה ונגישות. נכון למועד עדכון המדיניות, האתר אינו משתמש בעוגיות אנליטיקה או שיווק, והעדפות חיוניות אלו אינן משמשות לפרסום.</p>
 
     <h2>6. חשיפת פרטים אישיים לצדדים שלישיים</h2>
-    <p>אנו עשויים למסור את הפרטים האישיים שלכם לספקי שירות צד ג׳ לצורך תפעול האתר ומתן השירות המבוקש. אנו אינם מוכרים, משכירים או מעבירים מידע אישי לצדדים שלישיים למטרות שיווקיות ללא הסכמתכם.</p>
+    <p>אנו עשויים למסור את הפרטים האישיים שלכם לספקי שירות צד ג׳ לצורך תפעול האתר ומתן השירות המבוקש. איננו מוכרים, משכירים או מעבירים מידע אישי לצדדים שלישיים למטרות שיווקיות ללא הסכמתכם.</p>
     <p>פניות הנשלחות באמצעות טופס יצירת הקשר מעובדות באמצעות Google Apps Script ונשמרות בגיליון Google Sheets פרטי, הנגיש רק לבעלי החשבון המורשים. האתר מתארח ב־GitHub Pages, וגופנים וסקריפטים חיצוניים מסופקים על ידי ספקי התוכן הרלוונטיים.</p>
     <p>אנו עשויים לחשוף מידע גם לפי דרישת החוק או לצורך הגנה על זכויותינו המשפטיות.</p>
 
@@ -311,7 +311,9 @@
     var backLink = document.getElementById('back-link');
     if (backLink) backLink.textContent = isHe ? '← חזרה לאתר' : '← Back to site';
     document.querySelectorAll('[data-legal-lang]').forEach(function(btn) {
-      btn.classList.toggle('active', btn.dataset.legalLang === saved);
+      var active = btn.dataset.legalLang === saved;
+      btn.classList.toggle('active', active);
+      btn.setAttribute('aria-pressed', String(active));
     });
 
     document.querySelectorAll('[data-legal-lang]').forEach(function(btn) {
@@ -325,7 +327,9 @@
         document.querySelectorAll('.lang-he').forEach(function(el) { el.hidden = !rtl; });
         if (backLink) backLink.textContent = rtl ? '← חזרה לאתר' : '← Back to site';
         document.querySelectorAll('[data-legal-lang]').forEach(function(b) {
-          b.classList.toggle('active', b.dataset.legalLang === lang);
+          var active = b.dataset.legalLang === lang;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-pressed', String(active));
         });
       });
     });
