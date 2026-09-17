@@ -550,7 +550,10 @@ function initForm() {
     data.set('loadedAt', String(loadedAt));
 
     try {
-      await fetch(endpoint, { method: 'POST', mode: 'no-cors', body: data });
+      const response = await fetch(endpoint, { method: 'POST', body: data });
+      if (!response.ok) throw new Error(`Contact endpoint returned ${response.status}`);
+      const result = await response.json();
+      if (!result.ok) throw new Error(result.error || 'Contact endpoint rejected the inquiry');
       form.style.display = 'none';
       success.style.display = 'block';
     } catch (error) {
