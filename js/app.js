@@ -576,7 +576,7 @@ function initForm() {
       success.style.display = 'block';
     } catch (error) {
       submitButton.disabled = false;
-      window.location.href = `mailto:liranlouzon@llisrconsulting.com?subject=${encodeURIComponent('LLISR — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
+      window.location.href = `mailto:liranlouzon@gmail.com?subject=${encodeURIComponent('LLISR — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
     }
   });
 }
