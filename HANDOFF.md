@@ -25,7 +25,7 @@ The contact form posts to a Google Apps Script endpoint, which stores inquiries 
 
 - `CNAME`, canonical URLs, structured data, `robots.txt`, and `sitemap.xml` use `llisr.com`.
 - `www.llisr.com` should redirect to `https://llisr.com`.
-- The former domain `llisrconsulting.com` should return a permanent redirect to `https://llisr.com`, not a 404.
+- Keep `llisrconsulting.com` independent. Do not create a forwarding rule from it to `llisr.com` unless the owner explicitly changes this decision.
 - GitHub Pages “Enforce HTTPS” must remain enabled; this setting is managed outside the repository.
 
 ## Privacy and tracking
