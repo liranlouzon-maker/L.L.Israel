@@ -18,7 +18,7 @@
   <meta name="twitter:title" content="LLISR | Security, VIP & Travel Services">
   <meta name="twitter:description" content="Tailored security, transportation, concierge and travel solutions in Israel.">
   <meta name="twitter:image" content="https://llisr.com/images/hero-bg.jpg">
-  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="icon" href="images/logo-llisr.svg" type="image/svg+xml">
 
   <!-- Preload fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,7 +40,7 @@
     "@type": "ProfessionalService",
     "name": "LLISR",
     "url": "https://llisr.com/",
-    "logo": "https://llisr.com/images/logo.png",
+    "logo": "https://llisr.com/images/logo-llisr.svg",
     "image": "https://llisr.com/images/hero-bg.jpg",
     "description": "Consulting, security, event and trip planning, travel, VIP concierge, personal assistance, transportation, due diligence and provider assessment services in Israel and worldwide.",
     "telephone": "+972523954958",
@@ -456,7 +456,7 @@
           <div class="contact-info" style="display:flex;flex-direction:column;gap:0.75rem;margin-top:1.5rem">
             <a href="tel:+972523954958" style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;color:var(--color-text-mid);transition:color 0.2s" onmouseover="this.style.color='var(--color-accent-text)'" onmouseout="this.style.color='var(--color-text-mid)'">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
-              <span dir="ltr">+972 54-303-8542</span>
+              <span dir="ltr">+972 52-395-4958</span>
             </a>
             <a href="mailto:liranlouzon@gmail.com" style="display:flex;align-items:center;gap:0.6rem;font-size:0.9rem;color:var(--color-text-mid);transition:color 0.2s" onmouseover="this.style.color='var(--color-accent-text)'" onmouseout="this.style.color='var(--color-text-mid)'">
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -485,6 +485,10 @@
             <label for="f-message" data-i18n="form_message_label">Message</label>
             <textarea id="f-message" name="message" required data-i18n-placeholder="form_message" placeholder="How can we help you?"></textarea>
           </div>
+          <label class="form-consent" for="f-privacy-consent">
+            <input type="checkbox" id="f-privacy-consent" name="privacyConsent" required>
+            <span><span data-i18n="form_privacy_prefix">I have read the</span> <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a> <span data-i18n="form_privacy_suffix">and agree that my details may be processed to respond to my inquiry.</span></span>
+          </label>
           <button type="submit" class="btn btn-primary" style="width:100%">
             <span data-i18n="form_submit">Send Message</span>
           </button>
@@ -508,7 +512,7 @@
         <div class="footer-contact-list">
           <a href="tel:+972523954958" class="footer-contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.76 19.79 19.79 0 01.07 1.11 2 2 0 012 .01h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92v2z"/></svg>
-            <span dir="ltr">+972 54-303-8542</span>
+            <span dir="ltr">+972 52-395-4958</span>
           </a>
           <a href="mailto:liranlouzon@gmail.com" class="footer-contact-item">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -531,7 +535,6 @@
           <li><a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
           <li><a href="tos.html" data-i18n="footer_tos">Terms of Service</a></li>
           <li><a href="#" id="open-a11y-statement" data-i18n="footer_a11y_statement">Accessibility Statement</a></li>
-          <li><a href="#" id="open-cookie-settings" data-i18n="footer_cookie_settings">Cookie Settings</a></li>
         </ul>
       </div>
 
@@ -539,7 +542,6 @@
         <h4 data-i18n="footer_contact_title">CONTACT</h4>
         <ul>
           <li><a href="tel:+972523954958" dir="ltr">052-395-4958</a></li>
-          <li><a href="tel:+972543038542" dir="ltr">054-303-8542</a></li>
           <li><a href="mailto:liranlouzon@gmail.com">Email Us</a></li>
         </ul>
       </div>
@@ -710,9 +712,9 @@
       <h3>Contact Us About Accessibility</h3>
       <p>If you encounter an accessibility issue, please contact us:</p>
       <p>Email: <a href="mailto:liranlouzon@gmail.com">liranlouzon@gmail.com</a><br>
-      Phone: <a href="tel:+972543038542">054-303-8542</a></p>
+      Phone: <a href="tel:+972523954958">052-395-4958</a></p>
       <h3>Last Updated</h3>
-      <p>This accessibility statement was last updated: May 2026</p>
+      <p>This accessibility statement was last updated: September 2026</p>
     </div>
 
     <!-- Hebrew content -->
@@ -737,59 +739,13 @@
       <h3>יצירת קשר בנושא נגישות</h3>
       <p>אם נתקלתם בבעיית נגישות באתר, אנא פנו אלינו:</p>
       <p>דוא"ל: <a href="mailto:liranlouzon@gmail.com">liranlouzon@gmail.com</a><br>
-      טלפון: <a href="tel:+972543038542">054-303-8542</a></p>
+      טלפון: <a href="tel:+972523954958">052-395-4958</a></p>
       <h3>תאריך עדכון אחרון</h3>
-      <p>הצהרת נגישות זו עודכנה לאחרונה בתאריך: מאי 2026</p>
+      <p>הצהרת נגישות זו עודכנה לאחרונה בתאריך: ספטמבר 2026</p>
     </div>
   </div>
 </div>
 
-<!-- COOKIE CONSENT BANNER -->
-<div id="cookie-banner" role="alert" aria-live="polite">
-  <p data-i18n="cookie_banner_text">This site uses essential cookies to function properly. You can manage your preferences at any time.</p>
-  <div class="cookie-actions">
-    <button id="cookie-accept-all" data-i18n="cookie_accept_all">Accept All</button>
-    <button id="cookie-reject" data-i18n="cookie_reject">Essential Only</button>
-    <button id="cookie-settings" data-i18n="cookie_settings_btn">Settings</button>
-  </div>
-</div>
-
-<!-- COOKIE PREFERENCES MODAL -->
-<div id="cookie-prefs-overlay" class="modal-overlay" role="dialog" aria-modal="true" data-i18n-aria-label="cookie_prefs_title" aria-label="Cookie Settings">
-  <div class="modal-box">
-    <button class="modal-close-btn" id="cookie-prefs-close" aria-label="Close">✕</button>
-    <p class="modal-title" data-i18n="cookie_prefs_title">Cookie Settings</p>
-
-    <div class="cookie-pref-row">
-      <div class="cookie-pref-text">
-        <div class="cookie-pref-label" data-i18n="cookie_essential_label">Essential Cookies</div>
-        <div class="cookie-pref-desc" data-i18n="cookie_essential_desc">Required for the site to function. Cannot be disabled.</div>
-      </div>
-      <button class="cookie-toggle on" disabled aria-pressed="true" data-i18n-aria-label="cookie_essential_label" aria-label="Essential Cookies — always on"></button>
-    </div>
-
-    <div class="cookie-pref-row">
-      <div class="cookie-pref-text">
-        <div class="cookie-pref-label" data-i18n="cookie_analytics_label">Analytics Cookies</div>
-        <div class="cookie-pref-desc" data-i18n="cookie_analytics_desc">Help us understand how visitors use the site.</div>
-      </div>
-      <button class="cookie-toggle" id="cookie-toggle-analytics" aria-pressed="false" data-i18n-aria-label="cookie_analytics_label" aria-label="Analytics Cookies"></button>
-    </div>
-
-    <div class="cookie-pref-row">
-      <div class="cookie-pref-text">
-        <div class="cookie-pref-label" data-i18n="cookie_marketing_label">Marketing Cookies</div>
-        <div class="cookie-pref-desc" data-i18n="cookie_marketing_desc">Used to track marketing campaigns.</div>
-      </div>
-      <button class="cookie-toggle" id="cookie-toggle-marketing" aria-pressed="false" data-i18n-aria-label="cookie_marketing_label" aria-label="Marketing Cookies"></button>
-    </div>
-
-    <div class="cookie-modal-footer">
-      <button id="cookie-save-prefs" data-i18n="cookie_save">Save Settings</button>
-    </div>
-  </div>
-</div>
-
-<script src="js/app.js?v=5"></script>
+<script src="js/app.js?v=6"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 /* =====================================================
-   L.L Israel Security — style.css
+   LLISR — style.css
    Light premium theme with subtle blue details | EN + HE (RTL) ready
    ===================================================== */
 
@@ -1015,6 +1015,17 @@ header.scrolled .hamburger span { background: var(--color-text); }
   border-color: var(--color-accent);
 }
 .form-field textarea { min-height: 120px; resize: vertical; }
+.form-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  color: var(--color-text-mid);
+  font-size: 0.8rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.form-consent input { flex: 0 0 auto; margin-top: 0.2rem; }
+.form-consent a { color: var(--color-accent-text); text-decoration: underline; }
 .form-success {
   display: none;
   text-align: center;
@@ -1519,66 +1530,6 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 .modal-close-btn:hover { background: #F5F3EE; color: #0B1F35; }
 [dir="rtl"] .modal-close-btn { right: auto; left: 1rem; }
 
-/* Cookie preference rows */
-.cookie-pref-row {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 1rem 0;
-  border-bottom: 1px solid var(--color-border);
-  gap: 1rem;
-}
-.cookie-pref-row:last-of-type { border-bottom: none; }
-.cookie-pref-text {}
-.cookie-pref-label { font-weight: 600; color: #0B1F35; font-size: 0.9375rem; }
-.cookie-pref-desc { font-size: 0.8rem; color: #5A6070; margin-top: 0.2rem; line-height: 1.45; }
-.cookie-toggle {
-  flex-shrink: 0;
-  width: 44px;
-  height: 24px;
-  border-radius: 12px;
-  background: #D4D0C8;
-  border: none;
-  cursor: pointer;
-  position: relative;
-  transition: background 0.2s;
-  margin-top: 2px;
-}
-.cookie-toggle::after {
-  content: '';
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: white;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.2);
-  transition: transform 0.2s;
-}
-.cookie-toggle.on { background: #C9A84C; }
-.cookie-toggle.on::after { transform: translateX(20px); }
-.cookie-toggle:disabled { opacity: 0.55; cursor: not-allowed; }
-.cookie-modal-footer {
-  margin-top: 1.25rem;
-  display: flex;
-  justify-content: flex-end;
-}
-.cookie-modal-footer button {
-  padding: 0.65rem 1.5rem;
-  background: linear-gradient(135deg, var(--color-accent), var(--color-accent-dk));
-  color: #0B1F35;
-  border: none;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  font-size: 0.9rem;
-  cursor: pointer;
-  min-height: 42px;
-  font-family: var(--font);
-  transition: all 0.2s;
-}
-.cookie-modal-footer button:hover { transform: translateY(-1px); box-shadow: var(--shadow-md); }
-
 /* Accessibility statement content */
 .a11y-statement-content h3 {
   font-size: 1.0rem;
@@ -1596,79 +1547,6 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 }
 .a11y-statement-content ul { padding-right: 1.25rem; list-style: disc; }
 .a11y-statement-content a { color: #174D82; text-decoration: underline; }
-
-/* =====================================================
-   COOKIE BANNER
-   ===================================================== */
-#cookie-banner {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #0B1F35;
-  color: rgba(240,240,240,0.9);
-  padding: 1.25rem 2rem;
-  z-index: 250;
-  display: none;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  box-shadow: 0 -4px 24px rgba(0,0,0,0.25);
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-#cookie-banner.visible { display: flex; }
-#cookie-banner p {
-  font-size: 0.875rem;
-  color: rgba(240,240,240,0.78);
-  max-width: 580px;
-  flex: 1;
-  line-height: 1.55;
-  font-family: var(--font);
-}
-.cookie-actions {
-  display: flex;
-  gap: 0.65rem;
-  flex-wrap: wrap;
-  align-items: center;
-  flex-shrink: 0;
-}
-#cookie-accept-all {
-  padding: 0.55rem 1.2rem;
-  background: var(--color-accent);
-  color: #0B1F35;
-  border-radius: var(--radius-pill);
-  font-weight: 600;
-  font-size: 0.875rem;
-  cursor: pointer;
-  border: none;
-  transition: all 0.2s;
-  min-height: 40px;
-  font-family: var(--font);
-}
-#cookie-accept-all:hover { background: var(--color-accent-lt); }
-#cookie-reject,
-#cookie-settings {
-  padding: 0.55rem 1.2rem;
-  background: transparent;
-  color: rgba(240,240,240,0.78);
-  border: 1px solid rgba(255,255,255,0.18);
-  border-radius: var(--radius-pill);
-  font-weight: 500;
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: all 0.2s;
-  min-height: 40px;
-  font-family: var(--font);
-}
-#cookie-reject:hover,
-#cookie-settings:hover { border-color: rgba(255,255,255,0.38); color: #F0F0F0; }
-
-@media (max-width: 600px) {
-  #cookie-banner { padding: 1rem; }
-  .cookie-actions { width: 100%; justify-content: stretch; }
-  .cookie-actions button { flex: 1; justify-content: center; }
-}
 
 /* =====================================================
    FLOATING CONTACT WIDGET

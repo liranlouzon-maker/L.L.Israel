@@ -107,7 +107,9 @@ const TRANSLATIONS = {
     form_message_label: 'Message',
     form_message: 'How can we help you?',
     form_submit: 'Send Message',
-    form_success: 'Thank you! We will be in touch shortly.',
+    form_success: 'Thank you. Your inquiry was submitted. If you do not hear from us, please email liranlouzon@gmail.com.',
+    form_privacy_prefix: 'I have read the',
+    form_privacy_suffix: 'and agree that my details may be processed to respond to my inquiry.',
 
     cw_trigger:   'Contact Us',
     cw_title:     'How can we help?',
@@ -123,7 +125,6 @@ const TRANSLATIONS = {
     footer_privacy: 'Privacy Policy',
     footer_tos: 'Terms of Service',
     footer_a11y_statement: 'Accessibility Statement',
-    footer_cookie_settings: 'Cookie Settings',
 
     a11y_panel_title: 'Accessibility',
     a11y_panel_close_label: 'Close accessibility menu',
@@ -143,19 +144,6 @@ const TRANSLATIONS = {
     a11y_btn_no_anim: 'Stop Animations',
     a11y_reset: 'Reset All',
     a11y_toggle_label: 'Open accessibility menu',
-
-    cookie_banner_text: 'This site uses essential cookies to function properly. You can manage your preferences at any time.',
-    cookie_accept_all: 'Accept All',
-    cookie_reject: 'Essential Only',
-    cookie_settings_btn: 'Settings',
-    cookie_prefs_title: 'Cookie Settings',
-    cookie_essential_label: 'Essential Cookies',
-    cookie_essential_desc: 'Required for the site to function. Cannot be disabled.',
-    cookie_analytics_label: 'Analytics Cookies',
-    cookie_analytics_desc: 'Help us understand how visitors use the site.',
-    cookie_marketing_label: 'Marketing Cookies',
-    cookie_marketing_desc: 'Used to track marketing campaigns.',
-    cookie_save: 'Save Settings',
   },
 
   he: {
@@ -258,7 +246,9 @@ const TRANSLATIONS = {
     form_message_label: 'הודעה',
     form_message: 'כיצד נוכל לעזור לך?',
     form_submit: 'שלח הודעה',
-    form_success: 'תודה! ניצור קשר בקרוב.',
+    form_success: 'תודה. הפנייה נשלחה. אם לא קיבלתם מענה, ניתן לפנות גם ל־liranlouzon@gmail.com.',
+    form_privacy_prefix: 'קראתי את',
+    form_privacy_suffix: 'ואני מסכים לעיבוד פרטיי לצורך מענה לפנייה.',
 
     cw_trigger:   'צור קשר',
     cw_title:     'איך נוכל לעזור?',
@@ -274,7 +264,6 @@ const TRANSLATIONS = {
     footer_privacy: 'מדיניות פרטיות',
     footer_tos: 'תנאי שימוש',
     footer_a11y_statement: 'הצהרת נגישות',
-    footer_cookie_settings: 'הגדרות עוגיות',
 
     a11y_panel_title: 'נגישות',
     a11y_panel_close_label: 'סגור תפריט נגישות',
@@ -294,19 +283,6 @@ const TRANSLATIONS = {
     a11y_btn_no_anim: 'עצור אנימציות',
     a11y_reset: 'אפס הכל',
     a11y_toggle_label: 'פתח תפריט נגישות',
-
-    cookie_banner_text: 'האתר משתמש בעוגיות חיוניות לתפעולו התקין. ניתן לנהל את ההעדפות שלך בכל עת.',
-    cookie_accept_all: 'קבל הכל',
-    cookie_reject: 'חיוניות בלבד',
-    cookie_settings_btn: 'הגדרות',
-    cookie_prefs_title: 'הגדרות עוגיות',
-    cookie_essential_label: 'עוגיות חיוניות',
-    cookie_essential_desc: 'נדרשות לתפעול תקין של האתר. לא ניתן לבטלן.',
-    cookie_analytics_label: 'עוגיות אנליטיקה',
-    cookie_analytics_desc: 'מסייעות לנו להבין כיצד משתמשים באתר.',
-    cookie_marketing_label: 'עוגיות שיווקיות',
-    cookie_marketing_desc: 'משמשות למעקב אחר קמפיינים שיווקיים.',
-    cookie_save: 'שמור הגדרות',
   }
 };
 
@@ -556,11 +532,14 @@ function initForm() {
 
   form.addEventListener('submit', async e => {
     e.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+
     const name    = form.querySelector('#f-name').value.trim();
     const email   = form.querySelector('#f-email').value.trim();
     const message = form.querySelector('#f-message').value.trim();
-
-    if (!name || !email || !message) return;
 
     const submitButton = form.querySelector('button[type="submit"]');
     submitButton.disabled = true;
@@ -753,72 +732,6 @@ function initA11yStatementModal() {
   });
 }
 
-/* === COOKIE CONSENT === */
-function initCookieConsent() {
-  const COOKIE_KEY   = 'll-cookie-consent';
-  const banner       = document.getElementById('cookie-banner');
-  const prefsOverlay = document.getElementById('cookie-prefs-overlay');
-  if (!banner) return;
-
-  const saved = localStorage.getItem(COOKIE_KEY);
-  if (!saved) {
-    setTimeout(() => banner.classList.add('visible'), 900);
-  }
-
-  function saveConsent(prefs) {
-    try { localStorage.setItem(COOKIE_KEY, JSON.stringify(prefs)); } catch (e) {}
-    banner.classList.remove('visible');
-    if (prefsOverlay) { prefsOverlay.classList.remove('open'); document.body.style.overflow = ''; }
-  }
-
-  document.getElementById('cookie-accept-all') && document.getElementById('cookie-accept-all').addEventListener('click', () => {
-    saveConsent({ essential: true, analytics: true, marketing: true });
-  });
-  document.getElementById('cookie-reject') && document.getElementById('cookie-reject').addEventListener('click', () => {
-    saveConsent({ essential: true, analytics: false, marketing: false });
-  });
-  document.getElementById('cookie-settings') && document.getElementById('cookie-settings').addEventListener('click', openCookiePrefs);
-  document.getElementById('open-cookie-settings') && document.getElementById('open-cookie-settings').addEventListener('click', e => {
-    e.preventDefault(); openCookiePrefs();
-  });
-
-  function openCookiePrefs() {
-    if (!prefsOverlay) return;
-    let prefs = { essential: true, analytics: false, marketing: false };
-    try { const s = localStorage.getItem(COOKIE_KEY); if (s) prefs = JSON.parse(s); } catch (e) {}
-    const ta = document.getElementById('cookie-toggle-analytics');
-    const tm = document.getElementById('cookie-toggle-marketing');
-    if (ta) { ta.classList.toggle('on', !!prefs.analytics); ta.setAttribute('aria-pressed', String(!!prefs.analytics)); }
-    if (tm) { tm.classList.toggle('on', !!prefs.marketing); tm.setAttribute('aria-pressed', String(!!prefs.marketing)); }
-    prefsOverlay.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
-
-  ['cookie-toggle-analytics', 'cookie-toggle-marketing'].forEach(id => {
-    const btn = document.getElementById(id);
-    if (!btn) return;
-    btn.addEventListener('click', function() {
-      const on = this.classList.toggle('on');
-      this.setAttribute('aria-pressed', String(on));
-    });
-  });
-
-  document.getElementById('cookie-save-prefs') && document.getElementById('cookie-save-prefs').addEventListener('click', () => {
-    const analytics = document.getElementById('cookie-toggle-analytics')?.classList.contains('on') ?? false;
-    const marketing = document.getElementById('cookie-toggle-marketing')?.classList.contains('on') ?? false;
-    saveConsent({ essential: true, analytics, marketing });
-  });
-
-  if (prefsOverlay) {
-    const closeBtn = document.getElementById('cookie-prefs-close');
-    closeBtn && closeBtn.addEventListener('click', () => { prefsOverlay.classList.remove('open'); document.body.style.overflow = ''; });
-    prefsOverlay.addEventListener('click', e => { if (e.target === prefsOverlay) { prefsOverlay.classList.remove('open'); document.body.style.overflow = ''; } });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape' && prefsOverlay.classList.contains('open')) { prefsOverlay.classList.remove('open'); document.body.style.overflow = ''; }
-    });
-  }
-}
-
 /* === INIT ALL === */
 function initAudiencePanels() {
   const panels = document.querySelectorAll('.audience-panel');
@@ -857,7 +770,6 @@ function initAll() {
   initAudiencePanels();
   initAccessibilityPanel();
   initA11yStatementModal();
-  initCookieConsent();
   initContactWidget();
 }
 
