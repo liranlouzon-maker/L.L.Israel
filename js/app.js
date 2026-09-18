@@ -328,7 +328,7 @@ function initLangSwitcher() {
     btn.addEventListener('click', () => setLang(btn.dataset.langBtn));
   });
   const saved = localStorage.getItem('ll-lang');
-  if (saved && TRANSLATIONS[saved]) setLang(saved);
+  setLang(saved && TRANSLATIONS[saved] ? saved : 'en');
 }
 
 
