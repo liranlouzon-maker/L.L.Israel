@@ -568,10 +568,8 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .hero-ci-phone { background: #2563EB; border-color: #1D4ED8; }
 .hero-ci-wa { background: #25D366; border-color: #128C4C; }
 .hero-ci-tg { background: #229ED9; border-color: #1686BC; }
-.hero-ci-sms { background: #FF9500; border-color: #D97F00; }
-.hero-ci-email { background: #C9A84C; border-color: #A8893A; }
-.hero-ci-sms svg,
-.hero-ci-email svg { color: #0B1F35; }
+.hero-ci-sms { background: #5856D6; border-color: #4442B8; }
+.hero-ci-email { background: #174D82; border-color: #0F355B; }
 
 /* === STATS BAR (stays dark) === */
 .stats-bar {
