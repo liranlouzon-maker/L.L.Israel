@@ -571,83 +571,61 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .hero-ci-sms { background: #5856D6; border-color: #4442B8; }
 .hero-ci-email { background: #174D82; border-color: #0F355B; }
 
-/* === SCRIPTURE QUOTE === */
-.scripture-quote {
-  position: relative;
-  padding: 2.5rem 0;
-  background:
-    radial-gradient(circle at 50% 0%, rgba(var(--accent-rgb), 0.10), transparent 58%),
-    var(--color-bg);
+/* Decorative scripture within the opening screen */
+.hero-scripture {
+  position: absolute;
+  z-index: 11;
+  top: 7rem;
+  right: clamp(1.5rem, 4vw, 4.5rem);
+  width: min(320px, 27vw);
+  padding: 1rem 1.2rem;
+  color: #173F73;
+  background: rgba(245,243,238,0.52);
+  border: 1px solid rgba(var(--accent-rgb),0.42);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 28px rgba(26,28,34,0.07);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
-.scripture-frame {
-  position: relative;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2.25rem 4rem;
-  overflow: hidden;
-  text-align: center;
-  background: rgba(255,255,255,0.62);
-  border: 1px solid var(--color-border-accent);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 12px 36px rgba(26,28,34,0.06);
-}
-.scripture-frame::before,
-.scripture-frame::after {
+.hero-scripture::before {
   content: '';
   position: absolute;
-  top: 1rem;
-  bottom: 1rem;
-  width: 1px;
-  background: linear-gradient(transparent, rgba(var(--accent-rgb),0.55), transparent);
+  top: 0.75rem;
+  bottom: 0.75rem;
+  left: 0;
+  width: 2px;
+  background: linear-gradient(transparent, var(--color-accent), transparent);
 }
-.scripture-frame::before { left: 1rem; }
-.scripture-frame::after { right: 1rem; }
-.scripture-mark {
-  position: absolute;
-  top: -1.35rem;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: Georgia, serif;
-  font-size: 7rem;
-  line-height: 1;
-  color: rgba(var(--accent-rgb),0.13);
-  pointer-events: none;
-}
-.scripture-frame blockquote {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: minmax(0,1fr) 1px minmax(0,1fr);
-  align-items: center;
-  gap: 2rem;
-}
-.scripture-language p {
+.hero-scripture-copy { text-align: center; }
+.hero-scripture-copy p {
   margin: 0;
-  color: #173F73;
   font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-size: clamp(0.78rem, 1.15vw, 0.95rem);
   font-style: italic;
-  line-height: 1.65;
+  line-height: 1.55;
 }
-.scripture-language[lang="he"] p {
+.hero-scripture-copy[lang="he"] p {
   font-family: 'Heebo', sans-serif;
   font-style: normal;
   font-weight: 500;
 }
-.scripture-language cite {
+.hero-scripture-copy cite {
   display: block;
-  margin-top: 0.65rem;
+  margin-top: 0.45rem;
   color: var(--color-accent-text);
-  font-size: 0.68rem;
+  font-size: 0.62rem;
   font-style: normal;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
-.scripture-language[lang="he"] cite { letter-spacing: 0; }
-.scripture-divider {
-  width: 1px;
-  height: 72px;
-  background: linear-gradient(transparent, rgba(var(--accent-rgb),0.7), transparent);
+.hero-scripture-copy[lang="he"] cite { letter-spacing: 0; }
+[dir="rtl"] .hero-scripture {
+  right: auto;
+  left: clamp(1.5rem, 4vw, 4.5rem);
+}
+[dir="rtl"] .hero-scripture::before {
+  left: auto;
+  right: 0;
 }
 
 /* === STATS BAR (stays dark) === */
@@ -1285,14 +1263,13 @@ footer .footer-logo-img {
   .contact-inner { grid-template-columns: 1fr; gap: 3rem; }
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .hero-h1 { font-size: clamp(2.75rem, 10vw, 3.5rem); }
-  .scripture-frame { padding: 2rem 2.25rem; }
-  .scripture-frame blockquote { grid-template-columns: 1fr; gap: 1.25rem; }
-  .scripture-divider {
-    width: 72px;
-    height: 1px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, transparent, rgba(var(--accent-rgb),0.7), transparent);
+  .hero-scripture {
+    top: 6.4rem;
+    right: 1rem;
+    width: min(280px, calc(100% - 2rem));
+    padding: 0.7rem 0.9rem;
   }
+  [dir="rtl"] .hero-scripture { right: auto; left: 1rem; }
 }
 
 @media (max-width: 480px) {
@@ -1302,9 +1279,9 @@ footer .footer-logo-img {
   .hero-ctas .btn { width: 100%; justify-content: center; }
   .hero-contact-icons { align-self: center; }
   .hero-h1 { font-size: clamp(2.5rem, 12vw, 3.25rem); }
-  .scripture-quote { padding: 1.5rem 0; }
-  .scripture-frame { padding: 1.75rem 1.5rem; }
-  .scripture-language p { font-size: 1rem; line-height: 1.6; }
+  .hero-scripture { width: min(255px, calc(100% - 2rem)); }
+  .hero-scripture-copy p { font-size: 0.72rem; line-height: 1.45; }
+  .hero-scripture-copy cite { font-size: 0.56rem; }
 }
 
 /* === RTL OVERRIDES === */
