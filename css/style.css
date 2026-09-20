@@ -575,26 +575,13 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .hero-scripture {
   position: absolute;
   z-index: 11;
-  top: 7rem;
-  right: clamp(1.5rem, 4vw, 4.5rem);
-  width: min(320px, 27vw);
-  padding: 1rem 1.2rem;
+  top: 5.25rem;
+  right: clamp(1rem, 2.5vw, 2.5rem);
+  width: min(310px, 25vw);
   color: #173F73;
-  background: rgba(245,243,238,0.52);
-  border: 1px solid rgba(var(--accent-rgb),0.42);
-  border-radius: var(--radius);
-  box-shadow: 0 8px 28px rgba(26,28,34,0.07);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-.hero-scripture::before {
-  content: '';
-  position: absolute;
-  top: 0.75rem;
-  bottom: 0.75rem;
-  left: 0;
-  width: 2px;
-  background: linear-gradient(transparent, var(--color-accent), transparent);
+  text-shadow:
+    0 1px 12px rgba(245,243,238,0.98),
+    0 1px 3px rgba(245,243,238,0.95);
 }
 .hero-scripture-copy { text-align: center; }
 .hero-scripture-copy p {
@@ -621,11 +608,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
 .hero-scripture-copy[lang="he"] cite { letter-spacing: 0; }
 [dir="rtl"] .hero-scripture {
   right: auto;
-  left: clamp(1.5rem, 4vw, 4.5rem);
-}
-[dir="rtl"] .hero-scripture::before {
-  left: auto;
-  right: 0;
+  left: clamp(1rem, 2.5vw, 2.5rem);
 }
 
 /* === STATS BAR (stays dark) === */
@@ -1264,10 +1247,9 @@ footer .footer-logo-img {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .hero-h1 { font-size: clamp(2.75rem, 10vw, 3.5rem); }
   .hero-scripture {
-    top: 6.4rem;
+    top: 5.3rem;
     right: 1rem;
-    width: min(280px, calc(100% - 2rem));
-    padding: 0.7rem 0.9rem;
+    width: min(260px, calc(100% - 2rem));
   }
   [dir="rtl"] .hero-scripture { right: auto; left: 1rem; }
 }
