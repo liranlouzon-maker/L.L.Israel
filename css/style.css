@@ -1266,6 +1266,14 @@ footer .footer-logo-img {
   .hero-scripture-copy cite { font-size: 0.56rem; }
 }
 
+@media (max-width: 480px) and (orientation: portrait) {
+  [dir="ltr"] .hero-scripture {
+    top: 5rem;
+    right: 0.25rem;
+    width: 235px;
+  }
+}
+
 /* === RTL OVERRIDES === */
 [dir="rtl"] * { font-family: 'Heebo', sans-serif; }
 [dir="rtl"] .section-body { text-align: right; }
