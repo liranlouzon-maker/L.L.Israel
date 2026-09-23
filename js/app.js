@@ -8,6 +8,8 @@ let lenis;
 /* === TRANSLATIONS === */
 const TRANSLATIONS = {
   en: {
+    page_title: 'Israeli Security Services & Executive Protection | LLISR',
+    page_description: 'Israel-based security company providing Israeli security services, executive protection, risk consulting, secure transportation and VIP travel support in Israel and worldwide.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
@@ -19,7 +21,7 @@ const TRANSLATIONS = {
     hero_tag: 'Licensed Security Professionals',
     hero_h1_line1: 'Professional Security.',
     hero_h1_line2: 'Personal Service.',
-    hero_sub: 'LLISR is a consulting and security company.\n\nWe provide tailored solutions for businesses and private clients.\n\nOur services include security, trip planning and production, logistics, transportation, concierge services, background checks, and due diligence.',
+    hero_sub: 'LLISR is an Israel-based security company serving businesses, delegations, families and private clients worldwide.\n\nOur team is drawn from the highest levels of Israel’s security, military and law-enforcement systems.\n\nWe provide Israeli security services, executive protection, risk consulting, secure transportation, logistics, VIP travel support, background checks and due diligence.',
     hero_cta1: 'Get in Touch',
     hero_cta2: 'Contact Us',
     hero_badge1: 'Security & Travel Experts',
@@ -37,7 +39,8 @@ const TRANSLATIONS = {
     services_title: 'Tailored Security, Travel & Logistics Solutions',
     services_sub: 'Seamless planning, coordination, and execution for every mission.',
     service1_name: 'Security Services, Consulting & Staffing',
-    service1_desc: 'Our security and consulting services include protection for individuals, delegations and facilities, as well as mobile security; risk assessments; security surveys; loss prevention; investigations and surveillance; CCTV systems; anti-drone technologies; and advanced detection, locating and alert systems. Every service is tailored to the client\'s needs, operating environment, routine and budget.',
+    service1_desc: 'Our Israeli security services include executive protection and close protection for individuals, corporate leaders, delegations and facilities in Israel and abroad. We also provide mobile security, risk assessments, security surveys, loss prevention, investigations and surveillance, CCTV systems, anti-drone technologies, and advanced detection, locating and alert systems. Every service is tailored to the client\'s needs, operating environment, routine and budget.',
+    service1_link: 'Explore our Israeli security services →',
     service2_name: 'Trip and Events Planning',
     service2_tag1: 'Travel Advisory, Planning & Recommendations',
     service2_tag2: 'Guided Tours & Experiences',
@@ -52,7 +55,7 @@ const TRANSLATIONS = {
 
     about_tag: 'About LLISR',
     about_title: 'About Us',
-    about_p1: 'LLISR is a consulting and security company.\n\nWe provide tailored solutions for businesses and private clients.\n\nOur services include security, trip planning and production, logistics, transportation, concierge services, background checks, and due diligence.',
+    about_p1: 'LLISR is an Israel-based security and consulting company providing professional security services in Israel and internationally.\n\nOur team is drawn from the highest levels of Israel’s security, military and law-enforcement systems and combines operational experience with discreet, personal service.\n\nWe support businesses, executives, delegations, families and private clients from the United States, Europe and other international markets.',
     about_p2: 'Our services include the planning, coordination, and management of services and projects; identifying and connecting clients with the providers best suited to their needs; conducting reliability and due diligence checks; and providing professional guidance from planning through execution. Our experience, professional network, and commitment to personal service enable us to deliver professional, discreet, and efficient solutions while saving clients time, resources, and costs.',
     about_badge2: 'Israel-Based, International Support',
     about_badge4: 'End to End Operations',
@@ -147,6 +150,8 @@ const TRANSLATIONS = {
   },
 
   he: {
+    page_title: 'שירותי אבטחה ישראליים ואבטחת אישים | LLISR',
+    page_description: 'חברת אבטחה ישראלית המספקת אבטחת אישים, ייעוץ ביטחוני, תחבורה מאובטחת וליווי VIP בישראל ובעולם.',
     nav_services: 'שירותים',
     nav_about: 'אודות',
     nav_experience: 'ניסיון',
@@ -177,6 +182,7 @@ const TRANSLATIONS = {
     services_sub: 'תכנון, תיאום וביצוע חלק לכל משימה.',
     service1_name: 'שירותי אבטחה, יעוץ והשמה',
     service1_desc: 'שירותי האבטחה והייעוץ שלנו כוללים אבטחת אישים ומשלחות, מתקנים ואבטחה ניידת. הערכת סיכונים, סקרי אבטחה, מניעת אובדן, חקירות ומעקב, מערכות טלוויזיה במעגל סגור (CCTV), טכנולוגיות נגד רחפנים, ואמצעי גילוי, איתור והתראה מובילים. כל שירות מותאם לצרכים הייחודיים של הלקוח, לסביבה התפעולית שלו, לשגרה ולתקציב.',
+    service1_link: 'מידע נוסף על שירותי האבטחה הישראליים שלנו ←',
     service2_name: 'תכנון טיולים ואירועים',
     service2_tag1: 'ייעוץ, תכנון והמלצות לטיולים',
     service2_tag2: 'סיורים וחוויות מודרכות',
@@ -294,6 +300,9 @@ function setLang(code) {
   const isRTL = code === 'he';
   document.documentElement.dir  = isRTL ? 'rtl' : 'ltr';
   document.documentElement.lang = code;
+  document.title = t.page_title;
+  const description = document.querySelector('meta[name="description"]');
+  if (description) description.setAttribute('content', t.page_description);
 
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
@@ -740,20 +749,16 @@ function initAudiencePanels() {
   const panels = document.querySelectorAll('.audience-panel');
   if (!panels.length) return;
   panels.forEach(panel => {
-    panel.addEventListener('click', () => {
+    const trigger = panel.querySelector('.panel-collapsed');
+    if (!trigger) return;
+    trigger.addEventListener('click', () => {
       if (panel.classList.contains('active')) return;
       panels.forEach(p => {
         p.classList.remove('active');
-        p.setAttribute('aria-expanded', 'false');
+        p.querySelector('.panel-collapsed')?.setAttribute('aria-expanded', 'false');
       });
       panel.classList.add('active');
-      panel.setAttribute('aria-expanded', 'true');
-    });
-    panel.addEventListener('keydown', e => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        panel.click();
-      }
+      trigger.setAttribute('aria-expanded', 'true');
     });
   });
 }

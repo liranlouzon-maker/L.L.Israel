@@ -24,6 +24,8 @@ The contact form posts to a Google Apps Script endpoint, which stores inquiries 
 ## Domain and search configuration
 
 - `CNAME`, canonical URLs, structured data, `robots.txt`, and `sitemap.xml` use `llisr.com`.
+- English search targeting focuses on Israeli security services, executive protection in Israel, risk consulting, secure transportation, and international clients from the United States and Europe.
+- `israeli-security-services.html` is the main long-form English search landing page and must remain linked from the homepage.
 - `www.llisr.com` should redirect to `https://llisr.com`.
 - Keep `llisrconsulting.com` independent. Do not create a forwarding rule from it to `llisr.com` unless the owner explicitly changes this decision.
 - GitHub Pages “Enforce HTTPS” must remain enabled; this setting is managed outside the repository.

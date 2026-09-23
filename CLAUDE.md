@@ -21,11 +21,13 @@ Bilingual English/Hebrew single-page website built with vanilla HTML, CSS, and J
 ## Source files
 
 - `index.html`: page content, metadata, accessibility statement, and contact form
+- `israeli-security-services.html`: English SEO landing page for Israeli security and executive-protection searches
 - `css/style.css`: layout, responsive design, RTL rules, and accessibility styles
 - `js/app.js`: translations, interactions, accessibility controls, and form submission
 - `privacy.html`: bilingual privacy policy
 - `tos.html`: bilingual terms of service
 - `images/logo-llisr.svg`: current LLISR logo
+- `.well-known/security.txt`: responsible security-contact information
 
 ## Local preview
 
