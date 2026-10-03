@@ -37,7 +37,8 @@ const TRANSLATIONS = {
 
     services_tag: 'What We Offer',
     services_title: 'Tailored Security, Travel & Logistics Solutions',
-    services_sub: 'Seamless planning, coordination, and execution for every mission.',
+    services_sub: 'Choose a service to learn more.',
+    service_cta: 'View service',
     service1_name: 'Security Services, Consulting & Staffing',
     service1_desc: 'Our Israeli security services include executive protection and close protection for individuals, corporate leaders, delegations and facilities in Israel and abroad. We also provide mobile security, risk assessments, security surveys, loss prevention, investigations and surveillance, CCTV systems, anti-drone technologies, and advanced detection, locating and alert systems. Every service is tailored to the client\'s needs, operating environment, routine and budget.',
     service1_link: 'Explore our Israeli security services →',
@@ -179,7 +180,8 @@ const TRANSLATIONS = {
 
     services_tag: 'מה אנו מציעים',
     services_title: 'פתרונות ביטחון, נסיעות ולוגיסטיקה מותאמים אישית',
-    services_sub: 'תכנון, תיאום וביצוע חלק לכל משימה.',
+    services_sub: 'בחרו שירות לקבלת מידע נוסף.',
+    service_cta: 'לעמוד השירות',
     service1_name: 'שירותי אבטחה, יעוץ והשמה',
     service1_desc: 'שירותי האבטחה והייעוץ שלנו כוללים אבטחת אישים ומשלחות, מתקנים ואבטחה ניידת. הערכת סיכונים, סקרי אבטחה, מניעת אובדן, חקירות ומעקב, מערכות טלוויזיה במעגל סגור (CCTV), טכנולוגיות נגד רחפנים, ואמצעי גילוי, איתור והתראה מובילים. כל שירות מותאם לצרכים הייחודיים של הלקוח, לסביבה התפעולית שלו, לשגרה ולתקציב.',
     service1_link: 'מידע נוסף על שירותי האבטחה הישראליים שלנו ←',

@@ -30,7 +30,7 @@
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Heebo:wght@400;500;600;700&display=swap" as="style">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Heebo:wght@400;500;600;700&display=swap">
 
-  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="stylesheet" href="css/style.css?v=17">
 
   <!-- GSAP + ScrollTrigger + Lenis -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
@@ -214,58 +214,41 @@ We support businesses, executives, delegations, families and private clients fro
     <div class="services-header text-center fade-up">
       <span class="section-label" data-i18n="services_tag">What We Offer</span>
       <h2 class="section-heading" data-i18n="services_title">Tailored Security, Travel &amp; Logistics Solutions</h2>
-      <p class="section-body" data-i18n="services_sub">Seamless planning, coordination, and execution for every mission.</p>
+      <p class="section-body" data-i18n="services_sub">Choose a service to learn more.</p>
     </div>
-    <div class="services-grid">
 
-      <!-- Security Services and Consulting (featured, full-width) -->
-      <div class="service-card fade-left" data-spotlight data-num="01" style="transition-delay:0.05s">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-        </div>
-        <div>
-          <div class="service-name" data-i18n="service1_name">Security Services, Consulting &amp; Staffing</div>
-          <p class="service-desc" data-i18n="service1_desc">Our Israeli security services include executive protection and close protection for individuals, corporate leaders, delegations and facilities in Israel and abroad. We also provide mobile security, risk assessments, security surveys, loss prevention, investigations and surveillance, CCTV systems, anti-drone technologies, and advanced detection, locating and alert systems. Every service is tailored to the client’s needs, operating environment, routine and budget.</p>
-          <a class="service-detail-link" href="israeli-security-services.html" data-i18n="service1_link">Explore our Israeli security services →</a>
-        </div>
-      </div>
+    <div class="services-grid service-nav-grid">
+      <a class="service-card service-nav-card fade-up" href="israeli-security-services.html" data-spotlight data-num="01">
+        <span class="service-icon service-nav-icon" aria-hidden="true">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </span>
+        <span class="service-name" data-i18n="service1_name">Security Services, Consulting &amp; Staffing</span>
+        <span class="service-nav-cta"><span data-i18n="service_cta">View service</span><span class="service-nav-arrow" aria-hidden="true">→</span></span>
+      </a>
 
-      <!-- Trip and Events Planning -->
-      <div class="service-card fade-right" data-spotlight data-num="02" style="transition-delay:0.1s">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-        </div>
-        <div class="service-name" data-i18n="service2_name">Trip and Events Planning</div>
-        <ul class="service-tags-list">
-          <li data-i18n="service2_tag1">Travel Advisory, Planning &amp; Recommendations</li>
-          <li data-i18n="service2_tag2">Guided Tours &amp; Experiences</li>
-          <li data-i18n="service2_tag3">Family &amp; Corporate Events</li>
-          <li data-i18n="service2_tag4">Bar Mitzvahs &amp; Special Celebrations</li>
-          <li data-i18n="service2_tag5">Activities &amp; Attractions</li>
-          <li data-i18n="service2_tag6">Restaurant, Hotel, Venue &amp; Event-Space Reservations</li>
-        </ul>
-      </div>
+      <a class="service-card service-nav-card fade-up" href="trip-event-planning.html" data-spotlight data-num="02" style="transition-delay:0.06s">
+        <span class="service-icon service-nav-icon" aria-hidden="true">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M8.5 16.5l7-7"/></svg>
+        </span>
+        <span class="service-name" data-i18n="service2_name">Trip and Events Planning</span>
+        <span class="service-nav-cta"><span data-i18n="service_cta">View service</span><span class="service-nav-arrow" aria-hidden="true">→</span></span>
+      </a>
 
-      <!-- Transportation -->
-      <div class="service-card fade-left" data-spotlight data-num="03" style="transition-delay:0.15s">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-        </div>
-        <div class="service-name" data-i18n="service3_name">Transportation &amp; Logistics Services</div>
-        <p class="service-desc" data-i18n="service3_desc">Vehicle coordination and rental, private chauffeur services, luxury transportation, airport transfers, transportation for businesspeople, delegations and overseas guests, security drivers, armored vehicles upon request, and complete planning, coordination and management of transportation, travel and logistics arrangements.</p>
-      </div>
+      <a class="service-card service-nav-card fade-up" href="transportation-logistics.html" data-spotlight data-num="03" style="transition-delay:0.12s">
+        <span class="service-icon service-nav-icon" aria-hidden="true">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 16V8l2-4h11l3 4v8"/><path d="M5 8h12"/><circle cx="6" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M8 17h7"/></svg>
+        </span>
+        <span class="service-name" data-i18n="service3_name">Transportation &amp; Logistics Services</span>
+        <span class="service-nav-cta"><span data-i18n="service_cta">View service</span><span class="service-nav-arrow" aria-hidden="true">→</span></span>
+      </a>
 
-      <!-- VIP and Concierge (featured, full-width) -->
-      <div class="service-card fade-right" data-spotlight data-num="04" style="transition-delay:0.2s">
-        <div class="service-icon" aria-hidden="true">
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-        </div>
-        <div>
-          <div class="service-name" data-i18n="service4_name">VIP Concierge &amp; Guest Services</div>
-          <p class="service-desc" data-i18n="service4_desc">Personalized concierge and personal assistant (PA) services, tailored support for VIPs and distinguished guests, airport meet &amp; assist and lounge arrangements, secure arrivals and departures, hotel and restaurant bookings, and expert advisory for delivering unique, high-end experiences and exceptional service standards throughout Israel and internationally.</p>
-        </div>
-      </div>
-
+      <a class="service-card service-nav-card fade-up" href="vip-concierge.html" data-spotlight data-num="04" style="transition-delay:0.18s">
+        <span class="service-icon service-nav-icon" aria-hidden="true">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 14h16"/><path d="M6 14a6 6 0 0 1 12 0"/><path d="M12 5V3"/><path d="M3 18h18"/><path d="M8 21h8"/></svg>
+        </span>
+        <span class="service-name" data-i18n="service4_name">VIP Concierge &amp; Guest Services</span>
+        <span class="service-nav-cta"><span data-i18n="service_cta">View service</span><span class="service-nav-arrow" aria-hidden="true">→</span></span>
+      </a>
     </div>
   </div>
 </section>
@@ -780,6 +763,6 @@ We support businesses, executives, delegations, families and private clients fro
   </div>
 </div>
 
-<script src="js/app.js?v=10"></script>
+<script src="js/app.js?v=11"></script>
 </body>
 </html>
