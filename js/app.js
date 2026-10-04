@@ -8,8 +8,8 @@ let lenis;
 /* === TRANSLATIONS === */
 const TRANSLATIONS = {
   en: {
-    page_title: 'Israeli Security Services & Executive Protection | LLISR',
-    page_description: 'Israel-based security company providing Israeli security services, executive protection, risk consulting, secure transportation and VIP travel support in Israel and worldwide.',
+    page_title: 'Israeli Security & Private Trip Planning | LLISR',
+    page_description: 'LLISR provides executive protection, private trip planning, drivers and VIP concierge services in Israel for international businesses, families and private clients.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
