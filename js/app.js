@@ -9,7 +9,7 @@ let lenis;
 const TRANSLATIONS = {
   en: {
     page_title: 'Israeli Security & Private Trip Planning | LLISR',
-    page_description: 'LLISR provides executive protection, private trip planning, drivers and VIP concierge services in Israel for international businesses, families and private clients.',
+    page_description: 'LLISR is a consulting and security company in Israel, providing executive protection, private trip planning, transportation and VIP concierge services.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
