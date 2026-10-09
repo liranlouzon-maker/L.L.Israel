@@ -448,7 +448,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
   padding-top: 6rem;
   position: relative;
   overflow: hidden;
-  background-image: url('../images/hero-bg.jpg');
+  background-image: url('../images/hero-bg.jpg?v=2');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -785,7 +785,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
 /* === ABOUT === */
 #about {
   position: relative;
-  background-image: url('../images/about-professional.jpg');
+  background-image: url('../images/about-professional.jpg?v=2');
   background-size: cover;
   background-position: center 20%;
   border-top: none;
@@ -970,7 +970,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
 /* === EXPERIENCE === */
 #experience {
   position: relative;
-  background-image: url('../images/handshake.jpg');
+  background-image: url('../images/handshake.jpg?v=2');
   background-size: cover;
   background-position: center;
   border-top: none;
@@ -1804,7 +1804,7 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 .service-page-shell { width: min(1040px, calc(100% - 2rem)); margin: 0 auto; }
 .service-page-hero {
   padding: clamp(5rem, 10vw, 8rem) 0;
-  background: linear-gradient(90deg, rgba(245,243,238,0.98) 0%, rgba(245,243,238,0.88) 55%, rgba(245,243,238,0.55) 100%), url('../images/hero-bg.jpg') center/cover;
+  background: linear-gradient(90deg, rgba(245,243,238,0.98) 0%, rgba(245,243,238,0.88) 55%, rgba(245,243,238,0.55) 100%), url('../images/hero-bg.jpg?v=2') center/cover;
 }
 .service-page-hero .service-page-shell { max-width: 850px; margin-left: max(1rem, calc((100% - 1040px) / 2)); }
 .service-page-hero h1 {
