@@ -592,7 +592,7 @@ header.scrolled .hamburger span { background: var(--color-text); }
   top: 5.25rem;
   right: clamp(1rem, 2.5vw, 2.5rem);
   width: min(310px, 25vw);
-  color: #173F73;
+  color: #000;
   text-shadow:
     0 1px 12px rgba(245,243,238,0.98),
     0 1px 3px rgba(245,243,238,0.95);
@@ -602,18 +602,19 @@ header.scrolled .hamburger span { background: var(--color-text); }
   margin: 0;
   font-family: Georgia, 'Times New Roman', serif;
   font-size: clamp(0.78rem, 1.15vw, 0.95rem);
+  font-weight: 700;
   font-style: italic;
   line-height: 1.55;
 }
 .hero-scripture-copy[lang="he"] p {
   font-family: 'Heebo', sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
 }
 .hero-scripture-copy cite {
   display: block;
   margin-top: 0.45rem;
-  color: var(--color-accent-text);
+  color: #000;
   font-size: 0.62rem;
   font-style: normal;
   font-weight: 600;
