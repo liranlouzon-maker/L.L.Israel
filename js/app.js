@@ -111,7 +111,7 @@ const TRANSLATIONS = {
     form_message_label: 'Message',
     form_message: 'How can we help you?',
     form_submit: 'Send Message',
-    form_success: 'Thank you. Your inquiry was submitted. If you do not hear from us, please email liranlouzon@gmail.com.',
+    form_success: 'Thank you. Your inquiry was submitted. If you do not hear from us, please email liran@llisr.com.',
     form_privacy_prefix: 'I have read the',
     form_privacy_suffix: 'and agree that my details may be processed to respond to my inquiry.',
 
@@ -254,7 +254,7 @@ const TRANSLATIONS = {
     form_message_label: 'הודעה',
     form_message: 'כיצד נוכל לעזור לך?',
     form_submit: 'שלח הודעה',
-    form_success: 'תודה. הפנייה נשלחה. אם לא קיבלתם מענה, ניתן לפנות גם ל־liranlouzon@gmail.com.',
+    form_success: 'תודה. הפנייה נשלחה. אם לא קיבלתם מענה, ניתן לפנות גם ל־liran@llisr.com.',
     form_privacy_prefix: 'קראתי את',
     form_privacy_suffix: 'ואני מסכים לעיבוד פרטיי לצורך מענה לפנייה.',
 
@@ -569,7 +569,7 @@ function initForm() {
       success.style.display = 'block';
     } catch (error) {
       submitButton.disabled = false;
-      window.location.href = `mailto:liranlouzon@gmail.com?subject=${encodeURIComponent('LLISR — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
+      window.location.href = `mailto:liran@llisr.com?subject=${encodeURIComponent('LLISR — Website Inquiry')}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${form.querySelector('#f-phone').value.trim()}\n\nMessage:\n${message}`)}`;
     }
   });
 }
