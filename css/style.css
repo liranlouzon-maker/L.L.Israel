@@ -1943,3 +1943,14 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 .service-page-faq summary { cursor: pointer; font-weight: 700; line-height: 1.5; color: var(--color-text); }
 .service-page-faq summary:focus-visible { outline: 2px solid #174D82; outline-offset: 4px; }
 .service-page-faq details p { margin-bottom: .25rem; }
+
+/* Contextual links stay visible within service copy. */
+.hero-sub a,
+.seo-service-page main p a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.hero-sub a:hover,
+.seo-service-page main p a:hover {
+  text-decoration-thickness: 2px;
+}
