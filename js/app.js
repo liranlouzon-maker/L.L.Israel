@@ -8,8 +8,8 @@ let lenis;
 /* === TRANSLATIONS === */
 const TRANSLATIONS = {
   en: {
-    page_title: 'Israeli Security & Private Trip Planning | LLISR',
-    page_description: 'LLISR is a consulting and security company in Israel, providing executive protection, private trip planning, transportation and VIP concierge services.',
+    page_title: 'International Security Consulting & Israeli Security | LLISR',
+    page_description: 'LLISR is a consulting and security company providing security solutions in Israel and internationally for private clients, businesses and institutions, including Europe and the United States.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
@@ -19,6 +19,9 @@ const TRANSLATIONS = {
     footer_tagline: 'SECURITY · TRAVEL · DISCRETION',
 
     hero_tag: 'Licensed Security Professionals',
+    international_title: 'Security Consulting Beyond Israel',
+    international_desc: 'Tailored security advice and solutions outside Israel for private clients, families, businesses and institutions. Plan personal protection, site and event security, risk assessments and coordination of local providers for projects in Europe, the United States and other destinations.',
+    international_cta: 'Explore International Security Solutions',
     hero_h1_line1: 'Professional Security.',
     hero_h1_line2: 'Personal Service.',
     hero_sub: 'LLISR is an Israel-based security company serving businesses, delegations, families and private clients worldwide.\n\nOur team is drawn from the highest levels of Israel’s security, military and law-enforcement systems.\n\nWe provide Israeli security services, executive protection, risk consulting, secure transportation, logistics, VIP travel support, background checks and due diligence.',
@@ -162,6 +165,9 @@ const TRANSLATIONS = {
     footer_tagline: 'ביטחון · נסיעות · שיקול דעת',
 
     hero_tag: 'אנשי ביטחון מקצועיים ומורשים',
+    international_title: 'ייעוץ ופתרונות אבטחה מחוץ לישראל',
+    international_desc: 'ייעוץ ופתרונות אבטחה מותאמים ללקוחות פרטיים, משפחות, עסקים ומוסדות מחוץ לישראל. תכנון אבטחה אישית, אבטחת אתרים ואירועים, הערכות סיכונים ותיאום ספקים מקומיים לפרויקטים באירופה, בארצות הברית וביעדים נוספים.',
+    international_cta: 'פתרונות אבטחה בינלאומיים',
     hero_h1_line1: 'אבטחה מקצועית.',
     hero_h1_line2: 'יחס אישי.',
     hero_sub: 'LLISR היא חברת ייעוץ ואבטחה.\n\nאנו מספקים פתרונות מותאמים לעסקים וללקוחות פרטיים.\n\nשירותינו כוללים אבטחה, תכנון והפקת טיולים, לוגיסטיקה, תחבורה, שירותי קונסיירז\', בדיקות רקע ובדיקות נאותות.',
