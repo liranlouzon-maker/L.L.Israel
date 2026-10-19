@@ -1954,3 +1954,8 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 .seo-service-page main p a:hover {
   text-decoration-thickness: 2px;
 }
+
+/* Reserve space for the opening quote above translated headings on small screens. */
+@media (max-width: 768px) {
+  #hero { padding-top: 11.5rem; }
+}
