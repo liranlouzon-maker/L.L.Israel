@@ -9,7 +9,7 @@
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#F5F3EE">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-NZj4ccCEk5ENjHOSUGbr08rGsOoXdhTxGOwEa9LJ6GM=' https://cdnjs.cloudflare.com https://unpkg.com https://static.cloudflareinsights.com/beacon.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cloudflareinsights.com; form-action 'self' mailto:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'self' 'sha256-ljW46w/6EOMuoyyKuY0MsUEpAO2RkB7BHE0GSJ+PYuw=' https://cdnjs.cloudflare.com https://unpkg.com https://static.cloudflareinsights.com/beacon.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://cloudflareinsights.com; form-action 'self' mailto:; upgrade-insecure-requests">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://llisr.com/fr.html">
   <meta property="og:title" content="Conseil en sécurité physique et services sur mesure | LLISR">
@@ -38,65 +38,101 @@
   <!-- JSON-LD structured data -->
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "LLISR",
-  "url": "https://llisr.com/",
-  "logo": "https://llisr.com/images/logo-llisr.svg",
-  "image": "https://llisr.com/images/hero-bg.jpg",
-  "description": "LLISR est une société de conseil et de sécurité proposant un accompagnement personnel et des solutions de sécurité physique en Israël, en Europe et à l’international.",
-  "telephone": "+972523954958",
-  "email": "liran@llisr.com",
-  "areaServed": [
-    "Israel",
-    "United States",
-    "Europe",
-    "Worldwide"
-  ],
-  "knowsLanguage": [
-    "English",
-    "Hebrew"
-  ],
-  "@id": "https://llisr.com/#business",
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "LLISR Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Executive Protection and Israeli Security Services",
-          "url": "https://llisr.com/israeli-security-services.html"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Private Trip Planning and Custom Tours in Israel",
-          "url": "https://llisr.com/trip-event-planning.html"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Private Drivers and Chauffeur Services in Israel",
-          "url": "https://llisr.com/transportation-logistics.html"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "VIP Concierge and Guest Services in Israel",
-          "url": "https://llisr.com/vip-concierge.html"
-        }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "LLISR",
+      "url": "https://llisr.com/",
+      "logo": "https://llisr.com/images/logo-llisr.svg",
+      "image": "https://llisr.com/images/hero-bg.jpg",
+      "description": "LLISR est une société de conseil et de sécurité proposant un accompagnement personnel et des solutions de sécurité physique en Israël, en Europe et à l’international.",
+      "telephone": "+972523954958",
+      "email": "liran@llisr.com",
+      "areaServed": [
+        "Israel",
+        "United States",
+        "Europe",
+        "Worldwide"
+      ],
+      "knowsLanguage": [
+        "English",
+        "Hebrew"
+      ],
+      "@id": "https://llisr.com/#business",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "LLISR Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Executive Protection and Israeli Security Services",
+              "url": "https://llisr.com/israeli-security-services.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private Trip Planning and Custom Tours in Israel",
+              "url": "https://llisr.com/trip-event-planning.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Private Drivers and Chauffeur Services in Israel",
+              "url": "https://llisr.com/transportation-logistics.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "VIP Concierge and Guest Services in Israel",
+              "url": "https://llisr.com/vip-concierge.html"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Conseil international en sécurité physique",
+              "url": "https://llisr.com/international-security-consulting.html"
+            }
+          }
+        ]
       }
-    ]
-  }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://llisr.com/#website",
+      "url": "https://llisr.com/",
+      "name": "LLISR",
+      "publisher": {
+        "@id": "https://llisr.com/#business"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://llisr.com/fr.html#webpage",
+      "url": "https://llisr.com/fr.html",
+      "name": "Conseil en sécurité physique et services sur mesure | LLISR",
+      "description": "LLISR est une société de conseil et de sécurité proposant un accompagnement personnel et des solutions de sécurité physique en Israël, en Europe et à l’international.",
+      "inLanguage": "fr",
+      "isPartOf": {
+        "@id": "https://llisr.com/#website"
+      },
+      "about": {
+        "@id": "https://llisr.com/#business"
+      }
+    }
+  ]
 }</script>
-<link rel="alternate" hreflang="en" href="https://llisr.com/"><link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html"><link rel="alternate" hreflang="es" href="https://llisr.com/es.html"><link rel="alternate" hreflang="x-default" href="https://llisr.com/"><meta property="og:locale" content="fr_FR"></head>
+<link rel="alternate" hreflang="en" href="https://llisr.com/"><link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html"><link rel="alternate" hreflang="es" href="https://llisr.com/es.html"><link rel="alternate" hreflang="x-default" href="https://llisr.com/"><meta property="og:locale" content="fr_FR"><link rel="preload" as="image" href="images/hero-bg.jpg?v=2" fetchpriority="high">
+</head>
 <body>
 
 <a class="skip-link" href="#main-content" data-i18n="skip_link">Aller au contenu principal</a>

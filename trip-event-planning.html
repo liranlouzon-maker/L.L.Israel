@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://llisr.com/trip-event-planning.html">
   <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'sha256-p7uc/Tu3bOeH9BlOltNvjf+m40ExtINUf7H5gnPWotE=' https://static.cloudflareinsights.com/beacon.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; form-action 'self' mailto:; upgrade-insecure-requests">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'self'; object-src 'none'; script-src 'sha256-+w3Bj4CZ9Q/4AAV1Wys906r8mlCxShgSzUdKrqIEFfs=' https://static.cloudflareinsights.com/beacon.min.js; script-src-attr 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://cloudflareinsights.com; form-action 'self' mailto:; upgrade-insecure-requests">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://llisr.com/trip-event-planning.html">
   <meta property="og:title" content="Private Trip &amp; Event Planning in Israel | LLISR">
@@ -26,23 +26,67 @@
   <link rel="stylesheet" href="css/style.css?v=21">
   <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "Service",
-  "@id": "https://llisr.com/trip-event-planning.html#service",
-  "name": "Private Trip Planning and Event Production in Israel",
-  "url": "https://llisr.com/trip-event-planning.html",
-  "description": "Private trip planning and event production in Israel: tailored itineraries, family celebrations, business visits, venues and coordinated logistics.",
-  "serviceType": [
-    "Private trip planning",
-    "Event planning and production",
-    "Custom tours"
-  ],
-  "areaServed": "Israel",
-  "provider": {
-    "@type": "Organization",
-    "@id": "https://llisr.com/#business",
-    "name": "LLISR",
-    "url": "https://llisr.com/"
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://llisr.com/trip-event-planning.html#service",
+      "name": "Private Trip Planning and Event Production in Israel",
+      "url": "https://llisr.com/trip-event-planning.html",
+      "description": "Private trip planning and event production in Israel: tailored itineraries, family celebrations, business visits, venues and coordinated logistics.",
+      "serviceType": [
+        "Private trip planning",
+        "Event planning and production",
+        "Custom tours"
+      ],
+      "areaServed": "Israel",
+      "provider": {
+        "@id": "https://llisr.com/#business"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://llisr.com/#business",
+      "name": "LLISR",
+      "url": "https://llisr.com/",
+      "telephone": "+972523954958",
+      "email": "liran@llisr.com"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://llisr.com/trip-event-planning.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "LLISR",
+          "item": "https://llisr.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Private Trip Planning and Event Production in Israel",
+          "item": "https://llisr.com/trip-event-planning.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://llisr.com/trip-event-planning.html#webpage",
+      "url": "https://llisr.com/trip-event-planning.html",
+      "name": "Private Trip & Event Planning in Israel | LLISR",
+      "description": "Private trip planning and event production in Israel: tailored itineraries, family celebrations, business visits, venues and coordinated logistics.",
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://llisr.com/#website"
+      },
+      "mainEntity": {
+        "@id": "https://llisr.com/trip-event-planning.html#service"
+      },
+      "breadcrumb": {
+        "@id": "https://llisr.com/trip-event-planning.html#breadcrumb"
+      }
+    }
+  ]
 }</script>
 </head>
 <body class="seo-service-page">
@@ -58,7 +102,7 @@
 
   <main id="main-content">
     <section class="service-page-hero">
-      <div class="service-page-shell">
+      <div class="service-page-shell"><p aria-label="Breadcrumb"><a href="index.html">LLISR</a> / <span aria-current="page">Private Trip Planning and Event Production in Israel</span></p>
         <p class="section-label">Tailored planning · One point of contact</p>
         <h1>Private Trip Planning and Event Production in Israel</h1>
         <p class="service-page-lead">LLISR plans and coordinates private trips, family celebrations, business visits and special events for international clients.</p>
