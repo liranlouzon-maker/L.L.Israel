@@ -8,8 +8,8 @@ let lenis;
 /* === TRANSLATIONS === */
 const TRANSLATIONS = {
   en: {
-    page_title: 'Boutique Security Consulting & Services | LLISR',
-    page_description: 'LLISR is a boutique consulting and security company offering tailored services in Israel, Europe and internationally.',
+    page_title: 'Boutique Physical Security Consulting & Services | LLISR',
+    page_description: 'LLISR is a boutique consulting and security company providing physical security advice and tailored support in Israel, Europe and internationally.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
@@ -19,12 +19,12 @@ const TRANSLATIONS = {
     footer_tagline: 'SECURITY · TRAVEL · DISCRETION',
 
     hero_tag: 'Licensed Security Professionals',
-    international_title: 'Security Consulting Beyond Israel',
-    international_desc: 'Tailored security advice and solutions outside Israel for private clients, families, businesses and institutions. Plan personal protection, site and event security, risk assessments and coordination of local providers for projects in Europe, the United States and other destinations.',
+    international_title: 'Physical Security Consulting in Europe & Beyond',
+    international_desc: 'Physical security consulting for private clients, businesses and institutions outside Israel. We assess risks to people and properties, review site security, plan protection and event security, and coordinate suitable local providers for projects in Europe, the United States and other destinations.',
     international_cta: 'Explore International Security Solutions',
-    hero_h1_line1: 'Boutique Security.',
+    hero_h1_line1: 'Physical Security.',
     hero_h1_line2: 'Personal Service.',
-    hero_sub: 'LLISR is an Israel-based boutique consulting and security company serving businesses, delegations, families and private clients in Israel, Europe and internationally.\n\nWe combine professional security advice, careful planning and personal attention, with each service shaped around the client’s needs.\n\nWe provide Israeli security services, executive protection, risk consulting, secure transportation, logistics, VIP travel support, background checks and due diligence.',
+    hero_sub: 'LLISR is an Israel-based boutique consulting and security company serving private clients, businesses and institutions in Israel, Europe and internationally.\n\nOur focus is physical security: protecting people, reviewing sites and properties, assessing risks and planning security for events. One point of contact coordinates professional advice and tailored support around your needs.\n\nOur services include physical security and executive protection in Israel, international physical security consulting, trip and event planning and production, transportation and logistics, VIP concierge services, background checks and due diligence.',
     hero_cta1: 'Request a Tailored Consultation',
     hero_cta2: 'Contact Us',
     hero_badge1: 'Security & Travel Experts',
@@ -42,7 +42,7 @@ const TRANSLATIONS = {
     services_title: 'Tailored Security, Travel & Logistics Solutions',
     services_sub: 'Choose a service to learn more.',
     service_cta: 'View service',
-    service1_name: 'Security Services, Consulting & Staffing',
+    service1_name: 'Physical Security Services & Consulting',
     service1_desc: 'Our Israeli security services include executive protection and close protection for individuals, corporate leaders, delegations and facilities in Israel and abroad. We also provide mobile security, risk assessments, security surveys, loss prevention, investigations and surveillance, CCTV systems, anti-drone technologies, and advanced detection, locating and alert systems. Every service is tailored to the client\'s needs, operating environment, routine and budget.',
     service1_link: 'Explore our Israeli security services →',
     service2_name: 'Trip and Events Planning',
@@ -59,7 +59,7 @@ const TRANSLATIONS = {
 
     about_tag: 'About LLISR',
     about_title: 'About Us',
-    about_p1: 'LLISR is an Israel-based boutique consulting and security company providing professional, tailored services in Israel, Europe and internationally.\n\nOur team is drawn from the highest levels of Israel’s security, military and law-enforcement systems and combines operational experience with discreet, personal service.\n\nWe support businesses, executives, delegations, families and private clients from the United States, Europe and other international markets.',
+    about_p1: 'LLISR is an Israel-based boutique consulting and security company focused on physical security and professional, personal service in Israel, Europe and internationally.\n\nOur team is drawn from the highest levels of Israel’s security, military and law-enforcement systems and combines operational experience with discreet, personal service.\n\nWe support businesses, executives, delegations, families and private clients from the United States, Europe and other international markets.',
     about_p2: 'Our services include the planning, coordination, and management of services and projects; identifying and connecting clients with the providers best suited to their needs; conducting reliability and due diligence checks; and providing professional guidance from planning through execution. Our experience, professional network, and commitment to personal service enable us to deliver professional, discreet, and efficient solutions while saving clients time, resources, and costs.',
     about_badge2: 'Israel-Based, International Support',
     about_badge4: 'End to End Operations',
