@@ -9,7 +9,7 @@ let lenis;
 const TRANSLATIONS = {
   en: {
     page_title: 'International Security Consulting & Israeli Security | LLISR',
-    page_description: 'LLISR is a consulting and security company providing security solutions in Israel and internationally for private clients, businesses and institutions, including Europe and the United States.',
+    page_description: 'LLISR is a consulting and security company serving private clients, businesses and institutions in Israel, Europe and the United States.',
     nav_services: 'Services',
     nav_about: 'About',
     nav_experience: 'Experience',
