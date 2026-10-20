@@ -826,6 +826,7 @@ function initNav() {
 
 /* === SCROLL SPY === */
 function initNavActiveLinks() {
+  if (typeof IntersectionObserver === 'undefined') return;
   const sections = document.querySelectorAll('section[id]');
   const navLinks  = document.querySelectorAll('nav a[href^="#"]');
 
@@ -844,6 +845,7 @@ function initNavActiveLinks() {
 
 /* === SCROLL ANIMATIONS === */
 function initScrollAnimations() {
+  if (prefersReduced || typeof IntersectionObserver === 'undefined') return;
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -853,7 +855,12 @@ function initScrollAnimations() {
     });
   }, { threshold: 0.1 });
 
-  document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-scale').forEach(el => observer.observe(el));
+  document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-scale').forEach(el => {
+    // Never hide content already in view, including direct links to a section.
+    if (el.getBoundingClientRect().top < window.innerHeight) return;
+    observer.observe(el);
+    el.classList.add('reveal-pending');
+  });
 }
 
 /* === GSAP COUNTERS === */
@@ -1022,17 +1029,8 @@ function initLoader() {
   const loader = document.getElementById('loader');
   if (!loader) return;
 
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      loader.style.pointerEvents = 'none';
-      loader.style.transition = 'opacity 0.5s ease';
-      loader.style.opacity = '0';
-      setTimeout(() => loader.remove(), 550);
-    }, 300);
-  });
-
-  // Failsafe: if load event is slow, kill pointer-events immediately
-  setTimeout(() => { loader.style.pointerEvents = 'none'; }, 2000);
+  // Content is ready at DOMContentLoaded; do not wait for third-party assets.
+  loader.remove();
 }
 
 /* === LENIS SMOOTH SCROLL === */

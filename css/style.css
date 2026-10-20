@@ -158,7 +158,8 @@ ul, ol { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: _loader-timeout 0.4s ease forwards 6s;
+  animation: _loader-timeout 0.3s ease forwards 1.2s;
+  pointer-events: none;
 }
 .loader-mark {
   font-size: 1.5rem;
@@ -1199,33 +1200,33 @@ footer .footer-logo-img {
 }
 
 /* === SCROLL ANIMATIONS === */
-.fade-up {
+.fade-up.reveal-pending {
   opacity: 0;
   transform: translateY(32px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.fade-up.visible { opacity: 1; transform: translateY(0); }
+.fade-up.reveal-pending.visible { opacity: 1; transform: translateY(0); }
 
-.fade-left {
+.fade-left.reveal-pending {
   opacity: 0;
   transform: translateX(-32px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.fade-left.visible { opacity: 1; transform: translateX(0); }
+.fade-left.reveal-pending.visible { opacity: 1; transform: translateX(0); }
 
-.fade-right {
+.fade-right.reveal-pending {
   opacity: 0;
   transform: translateX(32px);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.fade-right.visible { opacity: 1; transform: translateX(0); }
+.fade-right.reveal-pending.visible { opacity: 1; transform: translateX(0); }
 
-.fade-scale {
+.fade-scale.reveal-pending {
   opacity: 0;
   transform: scale(0.92);
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
-.fade-scale.visible { opacity: 1; transform: scale(1); }
+.fade-scale.reveal-pending.visible { opacity: 1; transform: scale(1); }
 
 /* === RESPONSIVE === */
 @media (max-width: 1024px) {
@@ -1346,7 +1347,7 @@ footer .footer-logo-img {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
-  .fade-up { opacity: 1; transform: none; }
+  .fade-up.reveal-pending { opacity: 1; transform: none; }
   html { scroll-behavior: auto; }
 }
 
