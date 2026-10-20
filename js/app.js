@@ -796,9 +796,11 @@ function initNav() {
     overlay.classList.add('visible');
     hamburger.classList.add('open');
     hamburger.setAttribute('aria-expanded', 'true');
+    drawer.inert = false;
     drawer.setAttribute('aria-hidden', 'false');
     overlay.setAttribute('aria-hidden', 'false');
     document.body.style.overflow = 'hidden';
+    closeBtn.focus({ preventScroll: true });
   }
 
   function closeDrawer() {
@@ -806,6 +808,8 @@ function initNav() {
     overlay.classList.remove('visible');
     hamburger.classList.remove('open');
     hamburger.setAttribute('aria-expanded', 'false');
+    if (drawer.contains(document.activeElement)) hamburger.focus({ preventScroll: true });
+    drawer.inert = true;
     drawer.setAttribute('aria-hidden', 'true');
     overlay.setAttribute('aria-hidden', 'true');
     document.body.style.overflow = '';
@@ -944,11 +948,14 @@ function initContactWidget() {
 
   function open() {
     trigger.setAttribute('aria-expanded', 'true');
+    panel.inert = false;
     panel.setAttribute('aria-hidden', 'false');
     panel.classList.add('cw-open');
   }
   function close() {
     trigger.setAttribute('aria-expanded', 'false');
+    if (panel.contains(document.activeElement)) trigger.focus({ preventScroll: true });
+    panel.inert = true;
     panel.setAttribute('aria-hidden', 'true');
     panel.classList.remove('cw-open');
   }
