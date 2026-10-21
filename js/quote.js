@@ -22,7 +22,8 @@
   function refresh() {
     const items = selected();
     ['name', 'country'].forEach(id => get(id).setCustomValidity(get(id).value.trim() ? '' : `${copy[id]}: ${copy.pending}`));
-    boxes[0].setCustomValidity(items.length ? '' : copy.validation);
+    boxes[0].setCustomValidity('');
+    get('activity').setCustomValidity(items.length || get('activity').value.trim() || get('service-notes').value.trim() ? '' : copy.validation);
     boxes.forEach(box => {
       get(`q-${box.value}`).hidden = !box.checked;
       get(`qty-${box.value}`).disabled = !box.checked;
@@ -54,6 +55,9 @@
     });
     summary.append(list);
     const dl = document.createElement('dl');
+    [[copy.activity, get('activity').value.trim()], [copy.service_notes, get('service-notes').value.trim()]].forEach(([label, value]) => {
+      if (value) dl.append(textNode('dt', label), textNode('dd', value));
+    });
     [[copy.destination, [get('country').value.trim(),get('city').value.trim()].filter(Boolean).join(' / ') || copy.pending], [copy.dates, datesText()]].forEach(([label, value]) => {
       dl.append(textNode('dt',label), textNode('dd',value));
     });
@@ -67,7 +71,7 @@
     });
   }
   function message() {
-    const lines = [copy.summarytitle,'',...selected().map(item => `${item.quantity} × ${item.label}${item.id === 'other' ? `: ${get('other-detail').value.trim()}` : ''}`),'',`${copy.country}: ${get('country').value.trim()}`,`${copy.city}: ${get('city').value.trim() || '—'}`,`${copy.dates}: ${datesText()}`];
+    const lines = [copy.summarytitle,'',...(get('activity').value.trim() ? [`${copy.activity}:`, get('activity').value.trim(), ''] : []),...(get('service-notes').value.trim() ? [`${copy.service_notes}:`, get('service-notes').value.trim(), ''] : []),...selected().map(item => `${item.quantity} × ${item.label}${item.id === 'other' ? `: ${get('other-detail').value.trim()}` : ''}`),'',`${copy.country}: ${get('country').value.trim()}`,`${copy.city}: ${get('city').value.trim() || '—'}`,`${copy.dates}: ${datesText()}`];
     if (get('notes').value.trim()) lines.push('',`${copy.hours}:`,get('notes').value.trim());
     return lines.join('\n');
   }
@@ -114,7 +118,7 @@
   get('quote-edit').addEventListener('click', () => {
     get('quote-success').hidden = true; form.hidden = false;
     get('quote-error').hidden = true; get('quote-fallback').hidden = true;
-    boxes[0].focus();
+    get('activity').focus();
   });
   const params = new URLSearchParams(location.search);
   const initial = (params.get('services') || params.get('service') || '').split(',');
