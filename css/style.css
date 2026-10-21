@@ -1960,3 +1960,7 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 @media (max-width: 768px) {
   #hero { padding-top: 11.5rem; }
 }
+
+/* Dedicated service quote builder entry beside the general inquiry form. */
+.quote-entry { margin-bottom: 1.5rem; }
+.quote-entry .btn { width: 100%; justify-content: center; }
