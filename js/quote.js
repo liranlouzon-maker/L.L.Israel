@@ -36,13 +36,15 @@
       const target = new URL(link.href, location.href);
       if (target.origin !== location.origin || !languagePaths.has(target.pathname)) return;
       // A single handoff belongs to this tab, so always keep the language switch in it.
-      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      if (event.button > 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
       const values = Object.fromEntries(fields.map(field => [field.id,
         field.type === 'checkbox' ? field.checked : field.value]));
       try {
         sessionStorage.setItem(handoffKey, JSON.stringify({
           path: target.pathname, createdAt: Date.now(), fields: values
         }));
+        location.assign(target.href);
       } catch (_) {
         event.preventDefault();
         error.textContent = copy.language_failed;
