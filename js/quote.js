@@ -11,6 +11,47 @@
   const summary = get('request-summary');
   const button = get('quote-submit');
   const error = get('quote-error');
+  // One-use, same-tab handoff. Never put contact details in URLs or localStorage.
+  const handoffKey = 'll-quote-language-handoff';
+  const languagePaths = new Set(['/request-quote.html', '/fr-request-quote.html', '/es-request-quote.html']);
+  const fields = [...form.querySelectorAll('input[id], textarea[id], select[id]')];
+  function restoreLanguageHandoff() {
+    try {
+      const raw = sessionStorage.getItem(handoffKey);
+      if (!raw) return;
+      sessionStorage.removeItem(handoffKey);
+      const draft = JSON.parse(raw);
+      if (draft.path !== location.pathname || !Number.isFinite(draft.createdAt) ||
+          Date.now() - draft.createdAt > 30 * 60 * 1000 || draft.createdAt > Date.now() ||
+          !draft.fields || typeof draft.fields !== 'object') return;
+      fields.forEach(field => {
+        const value = draft.fields[field.id];
+        if (field.type === 'checkbox' && typeof value === 'boolean') field.checked = value;
+        else if (field.type !== 'checkbox' && typeof value === 'string') field.value = value;
+      });
+    } catch (_) { /* Storage may be unavailable; the normal form still works. */ }
+  }
+  form.closest('body').querySelectorAll('header nav a[lang]').forEach(link => {
+    link.addEventListener('click', event => {
+      const target = new URL(link.href, location.href);
+      if (target.origin !== location.origin || !languagePaths.has(target.pathname)) return;
+      // A single handoff belongs to this tab, so always keep the language switch in it.
+      if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const values = Object.fromEntries(fields.map(field => [field.id,
+        field.type === 'checkbox' ? field.checked : field.value]));
+      try {
+        sessionStorage.setItem(handoffKey, JSON.stringify({
+          path: target.pathname, createdAt: Date.now(), fields: values
+        }));
+      } catch (_) {
+        event.preventDefault();
+        error.textContent = copy.language_failed;
+        error.hidden = false;
+        error.setAttribute('role', 'alert');
+        error.scrollIntoView({ block: 'nearest' });
+      }
+    });
+  });
   const selected = () => boxes.filter(box => box.checked).map(box => ({
     id: box.value, label: box.dataset.label, quantity: get(`qty-${box.value}`).value
   }));
@@ -62,7 +103,7 @@
       dl.append(textNode('dt',label), textNode('dd',value));
     });
     summary.append(dl);
-    // Preserve only selected service types when switching the page language.
+    // Service choices may appear in the URL; other fields use the one-use handoff.
     form.closest('body').querySelectorAll('header nav a[lang]').forEach(link => {
       const url = new URL(link.getAttribute('href'), location.href);
       url.searchParams.delete('service'); url.searchParams.delete('services');
@@ -106,6 +147,7 @@
       if (!response.ok) throw new Error('Request not confirmed');
       const result = await response.json();
       if (!result.ok) throw new Error('Request not accepted');
+      try { sessionStorage.removeItem(handoffKey); } catch (_) {}
       get('sent-summary').textContent = submittedSummary;
       form.hidden = true; get('quote-success').hidden = false; get('quote-success').focus();
     } catch (_) {
@@ -123,5 +165,6 @@
   const params = new URLSearchParams(location.search);
   const initial = (params.get('services') || params.get('service') || '').split(',');
   boxes.forEach(box => { box.checked = initial.includes(box.value); });
+  restoreLanguageHandoff();
   refresh();
 })();

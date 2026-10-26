@@ -1,37 +1,179 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://llisr.com/</loc>
     <lastmod>2026-10-21</lastmod>
-    <xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/"/></url>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/" />
+  </url>
   <url>
     <loc>https://llisr.com/israeli-security-services.html</loc>
-    <lastmod>2026-10-21</lastmod>
-    </url>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/israeli-security-services.html" />
+  </url>
   <url>
     <loc>https://llisr.com/trip-event-planning.html</loc>
-    <lastmod>2026-10-21</lastmod>
-    </url>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/trip-event-planning.html" />
+  </url>
   <url>
     <loc>https://llisr.com/transportation-logistics.html</loc>
-    <lastmod>2026-10-21</lastmod>
-    </url>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/transportation-logistics.html" />
+  </url>
   <url>
     <loc>https://llisr.com/vip-concierge.html</loc>
-    <lastmod>2026-10-21</lastmod>
-    </url>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/vip-concierge.html" />
+  </url>
   <url>
     <loc>https://llisr.com/privacy.html</loc>
     <lastmod>2026-09-17</lastmod>
-    </url>
+  </url>
   <url>
     <loc>https://llisr.com/tos.html</loc>
     <lastmod>2026-09-17</lastmod>
-    </url>
-<url><loc>https://llisr.com/international-security-consulting.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html"/></url>
-<url><loc>https://llisr.com/fr.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/"/></url>
-<url><loc>https://llisr.com/es.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/"/></url>
-<url><loc>https://llisr.com/fr-international-security-consulting.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html"/></url><url><loc>https://llisr.com/es-international-security-consulting.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html"/></url><url><loc>https://llisr.com/request-quote.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html"/></url>
-<url><loc>https://llisr.com/fr-request-quote.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html"/></url>
-<url><loc>https://llisr.com/es-request-quote.html</loc><lastmod>2026-10-21</lastmod><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html"/><xhtml:link xmlns:xhtml="http://www.w3.org/1999/xhtml" rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html"/></url>
+  </url>
+  <url>
+    <loc>https://llisr.com/international-security-consulting.html</loc>
+    <lastmod>2026-10-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-international-security-consulting.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-international-security-consulting.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-international-security-consulting.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/international-security-consulting.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/request-quote.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-request-quote.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-request-quote.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-request-quote.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/request-quote.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-israeli-security-services.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/israeli-security-services.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-israeli-security-services.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-israeli-security-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/israeli-security-services.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-trip-event-planning.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/trip-event-planning.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-trip-event-planning.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-trip-event-planning.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/trip-event-planning.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-transportation-logistics.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/transportation-logistics.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-transportation-logistics.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-transportation-logistics.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/transportation-logistics.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-vip-concierge.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/vip-concierge.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-vip-concierge.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-vip-concierge.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/vip-concierge.html" />
+  </url>
 </urlset>
