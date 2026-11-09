@@ -812,17 +812,20 @@ header.scrolled .hamburger span { background: var(--color-text); }
 }
 .about-badges {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 2rem;
 }
 .about-badge {
   display: flex;
+  max-width: 100%;
+  min-width: 0;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.8rem;
   font-weight: 600;
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: anywhere;
   color: var(--color-accent-text);
   border: 1px solid var(--color-border-accent);
   background: rgba(var(--accent-rgb),0.07);
@@ -1666,6 +1669,7 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
    FLOATING CONTACT WIDGET
    ===================================================== */
 .cw-root {
+  pointer-events: none;
   position: fixed;
   bottom: 1.5rem;
   right: 1.5rem;
@@ -1682,6 +1686,7 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 }
 
 .cw-trigger {
+  pointer-events: auto;
   display: flex;
   align-items: center;
   gap: 0.55rem;
@@ -1709,6 +1714,8 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 }
 
 .cw-panel {
+  max-height: calc(100dvh - 6rem);
+  overflow-y: auto;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 8px 32px rgba(0,0,0,0.12);
