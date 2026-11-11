@@ -1988,3 +1988,18 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
   .nav-inner > .nav-right { margin-inline-start: auto; }
   .content-page #hero { padding-block: 8rem 3rem; }
 }
+
+/* A concise welcome, with the original heading and scripture. */
+.minimal-home .welcome-hero { min-height: 100svh; display: flex; align-items: center; padding: 9rem 0 5rem; }
+.welcome-hero > .container { width: 100%; }
+.welcome-content { max-width: 760px; margin-inline: auto; text-align: center; }
+.welcome-content .hero-h1 { font-size: clamp(2.75rem, 5.5vw, 4.75rem); }
+.welcome-content .hero-sub { max-width: 54ch; margin: 0 auto; white-space: normal; }
+.minimal-home .welcome-content .hero-scripture { position: static; width: min(100%, 390px); margin: 3.5rem auto 0; text-shadow: none; }
+.welcome-content .hero-scripture-copy p { font-weight: 400; font-size: .95rem; }
+.welcome-content .hero-scripture-copy cite { margin-top: .75rem; color: var(--color-accent-text); }
+@media (max-width: 480px) {
+  .minimal-home .welcome-hero { padding: 8rem 0 4rem; }
+  .welcome-content .hero-sub { font-size: .98rem; }
+  .minimal-home .welcome-content .hero-scripture { margin-top: 2.5rem; }
+}
