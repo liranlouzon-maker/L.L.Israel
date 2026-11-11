@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://llisr.com/</loc>
-    <lastmod>2026-10-21</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
@@ -58,7 +58,7 @@
   </url>
   <url>
     <loc>https://llisr.com/fr.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://llisr.com/es.html</loc>
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-12</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es.html" />
@@ -175,5 +175,77 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-vip-concierge.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-vip-concierge.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/vip-concierge.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/about.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/about.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-about.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/about.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-about.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/about.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/about.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/services.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/services.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-services.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/services.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-services.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/services.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-services.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-services.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/services.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/contact.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/fr-contact.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/contact.html" />
+  </url>
+  <url>
+    <loc>https://llisr.com/es-contact.html</loc>
+    <lastmod>2026-11-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://llisr.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://llisr.com/fr-contact.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://llisr.com/es-contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://llisr.com/contact.html" />
   </url>
 </urlset>

@@ -714,9 +714,14 @@ function setLang(code) {
   if (!t) return;
 
   const isRTL = code === 'he';
+  const contentPage = document.documentElement.dataset.contentPage;
+  if (contentPage) {
+    const key = contentPage === 'about' ? 'nav_about' : contentPage === 'services' ? 'nav_services' : 'nav_contact';
+    document.title = t[key] + ' | LLISR';
+  }
   document.documentElement.dir  = isRTL ? 'rtl' : 'ltr';
   document.documentElement.lang = code;
-  if (document.documentElement.dataset.defaultLang) {
+  if (document.documentElement.dataset.defaultLang && !document.documentElement.dataset.contentPage) {
     document.title = t.page_title;
     const description = document.querySelector('meta[name="description"]');
     if (description) description.setAttribute('content', t.page_description);
@@ -747,7 +752,7 @@ function setLang(code) {
     if (active) link.setAttribute('aria-current', 'page');
     else link.removeAttribute('aria-current');
   });
-  if (document.documentElement.dataset.defaultLang) {
+  if (document.documentElement.dataset.defaultLang && !document.documentElement.dataset.contentPage) {
     const values = { 'og:title': t.page_title, 'og:description': t.page_description,
       'twitter:title': t.page_title, 'twitter:description': t.page_description };
     Object.entries(values).forEach(([name, value]) => {
@@ -1211,6 +1216,15 @@ function initAudiencePanels() {
 }
 
 function initAll() {
+  const homeRoutes = { hero: 'about', about: 'about', audience: 'about', experience: 'about', services: 'services', international: 'services', contact: 'contact', faq: 'contact' };
+  if (document.body.classList.contains('minimal-home')) {
+    const anchor = window.location.hash.slice(1);
+    if (homeRoutes[anchor]) {
+      const prefix = ['fr', 'es'].includes(document.documentElement.dataset.defaultLang) ? document.documentElement.dataset.defaultLang + '-' : '';
+      window.location.replace(prefix + homeRoutes[anchor] + '.html#' + anchor);
+      return;
+    }
+  }
   initLangSwitcher();
   initLoader();
   if (!prefersReduced && typeof Lenis !== 'undefined' && typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') initLenis();

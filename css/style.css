@@ -1971,3 +1971,20 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
 /* Dedicated service quote builder entry beside the general inquiry form. */
 .quote-entry { margin-bottom: 1.5rem; }
 .quote-entry .btn { width: 100%; justify-content: center; }
+
+/* Minimal entry page and relocated company content. */
+.nav-brand { display: flex; flex-shrink: 0; align-items: center; }
+.nav-brand img { display: block; width: 52px; height: 52px; object-fit: contain; }
+.nav-inner > .nav-links { margin-inline-start: auto; }
+.minimal-home { background: #F5F3EE; }
+.minimal-home #main-content { min-height: 100svh; background: none; }
+.minimal-home #header { background: #F5F3EE; border: 0; box-shadow: none; }
+.content-page #header { background: rgba(245,243,238,.96); border-bottom: 1px solid var(--color-border); }
+.content-page:not(.about-page) #main-content { padding-top: 100px; }
+.content-page #hero { min-height: auto; padding-block: 10rem 5rem; }
+.content-page #hero .hero-content { max-width: 780px; }
+@media (max-width: 768px) {
+  .nav-brand img { width: 44px; height: 44px; }
+  .nav-inner > .nav-right { margin-inline-start: auto; }
+  .content-page #hero { padding-block: 8rem 3rem; }
+}
