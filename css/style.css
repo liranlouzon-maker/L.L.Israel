@@ -2003,3 +2003,49 @@ html.a11y-readable-font * { font-family: Arial, Helvetica, sans-serif !important
   .welcome-content .hero-sub { font-size: .98rem; }
   .minimal-home .welcome-content .hero-scripture { margin-top: 2.5rem; }
 }
+
+/* === LANGUAGE AND RESPONSIVE CONSISTENCY (v28) === */
+[hidden] { display: none !important; }
+.nav-inner, .nav-links { min-width: 0; }
+.nav-links a { white-space: nowrap; }
+.nav-right, .lang-switcher { flex-shrink: 0; }
+.lang-switcher { background: rgba(23,63,115,.045); border-color: rgba(23,63,115,.18); }
+.lang-btn.active { background: rgba(var(--accent-rgb),.22); }
+[dir="rtl"] .mobile-drawer {
+  right: auto; left: 0; transform: translateX(-100%);
+  border-left: 0; border-right: 1px solid var(--color-border);
+  box-shadow: 8px 0 40px rgba(0,0,0,.15); text-align: right;
+}
+[dir="rtl"] .mobile-drawer.open { transform: translateX(0); }
+[dir="rtl"] .mobile-drawer a { text-align: right; }
+.service-page-hero .service-page-shell {
+  margin-left: auto;
+  margin-inline-start: max(1rem, calc((100% - 1040px) / 2));
+  margin-inline-end: auto;
+}
+.service-page-hero h1, .service-page-section h2, .service-page-cta h2 {
+  overflow-wrap: break-word; hyphens: auto;
+}
+.service-page-header nav a[aria-current="page"] {
+  color: #173F73; border-bottom: 2px solid var(--color-accent);
+}
+@media (max-width: 1100px) {
+  .nav-inner > .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .nav-inner > .nav-right { margin-inline-start: auto; }
+}
+@media (max-width: 768px) {
+  .service-page-hero .service-page-shell { margin-inline: auto; }
+  .service-page-hero h1 { font-size: clamp(2.4rem, 9vw, 4.2rem); line-height: 1.08; }
+  .service-page-section h2, .service-page-cta h2 { line-height: 1.13; }
+}
+@media (max-width: 420px) {
+  .nav-inner { gap: .35rem; }
+  .nav-right { gap: .3rem; }
+  .nav-brand img { width: 40px; height: 40px; }
+  .lang-switcher { gap: 0; padding: 2px; }
+  .lang-btn { min-width: 36px; min-height: 36px; padding: .3rem .35rem; font-size: .7rem; }
+  .hamburger { padding: .35rem; min-width: 40px; }
+  .service-page-header { gap: .6rem; }
+  .service-page-header nav { gap: .65rem; }
+}

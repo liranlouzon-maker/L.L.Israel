@@ -710,6 +710,17 @@ const TRANSLATIONS = {
 
 /* === i18n === */
 function setLang(code) {
+  // Hebrew uses the English page family for consistent RTL content and links.
+  if (code === 'he' && ['fr', 'es'].includes(document.documentElement.dataset.defaultLang)) {
+    const englishPage = document.querySelector('[data-lang-target="en"]');
+    if (englishPage) {
+      try { localStorage.setItem('ll-lang', 'he'); } catch (error) {}
+      const target = new URL(englishPage.getAttribute('href'), window.location.href);
+      target.hash = window.location.hash;
+      window.location.assign(target.href);
+      return;
+    }
+  }
   const t = TRANSLATIONS[code];
   if (!t) return;
 
