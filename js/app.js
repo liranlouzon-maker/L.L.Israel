@@ -717,6 +717,7 @@ function setLang(code) {
       try { localStorage.setItem('ll-lang', 'he'); } catch (error) {}
       const target = new URL(englishPage.getAttribute('href'), window.location.href);
       target.hash = window.location.hash;
+      target.searchParams.set('lang', 'he');
       window.location.assign(target.href);
       return;
     }
@@ -778,6 +779,17 @@ function setLang(code) {
     btn.setAttribute('aria-pressed', String(active));
   });
 
+  // Carry Hebrew through English-family pages even when storage is unavailable.
+  document.querySelectorAll('a[href]').forEach(link => {
+    if (link.hasAttribute('data-lang-target')) return;
+    const target = new URL(link.getAttribute('href'), window.location.href);
+    if (target.origin !== window.location.origin || !/\.html$/.test(target.pathname)) return;
+    if (/\/(fr|es)(-|\.html$)/.test(target.pathname)) return;
+    if (code === 'he') target.searchParams.set('lang', 'he');
+    else target.searchParams.delete('lang');
+    link.href = target.href;
+  });
+
   try { localStorage.setItem('ll-lang', code); } catch (error) {}
 }
 
@@ -787,14 +799,19 @@ function initLangSwitcher() {
   });
   document.querySelectorAll('[data-lang-target]').forEach(link => {
     link.addEventListener('click', () => {
+      const target = new URL(link.getAttribute('href'), window.location.href);
+      target.hash = window.location.hash;
+      target.searchParams.delete('lang');
+      link.href = target.href;
       try { localStorage.setItem('ll-lang', link.dataset.langTarget); } catch (error) {}
     });
   });
   let saved;
   try { saved = localStorage.getItem('ll-lang'); } catch (error) {}
   const pageLanguage = document.documentElement.dataset.defaultLang;
+  const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
   const initial = pageLanguage === 'fr' || pageLanguage === 'es'
-    ? pageLanguage : (saved === 'he' ? 'he' : 'en');
+    ? pageLanguage : (requestedLanguage === 'he' || (requestedLanguage !== 'en' && saved === 'he') ? 'he' : 'en');
   setLang(initial);
 }
 
