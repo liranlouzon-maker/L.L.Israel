@@ -191,7 +191,19 @@ const TRANSLATIONS = {
     "aria_7": "Email",
     "aria_8": "Decrease text size",
     "aria_9": "Increase text size",
-    "aria_10": "Close"
+    "aria_10": "Close",
+    "home_title1": "Executive Protection &",
+    "home_title2": "Physical Security Consulting",
+    "home_intro": "LLISR provides executive protection and secure transportation in Israel. For projects abroad, we offer physical security consulting, risk assessments and protection planning, with local support coordinated according to the destination and scope.",
+    "home_primary": "Discuss Your Security Needs",
+    "home_secondary": "Explore Security Services",
+    "home_services": "Protection, Consulting & Secure Travel",
+    "home_israel": "Executive Protection in Israel",
+    "home_global": "International Security Consulting",
+    "home_travel": "Secure Travel & Delegation Support",
+    "home_israel_desc": "Discreet protection for executives, families and visiting delegations.",
+    "home_global_desc": "Risk assessments, site security surveys and practical action plans.",
+    "home_travel_desc": "Drivers, routes and logistics coordinated around your visit."
   },
   "he": {
     "page_title": "שירותי אבטחה ישראליים ואבטחת אישים | LLISR",
@@ -332,7 +344,19 @@ const TRANSLATIONS = {
     "a11y_btn_large_cursor": "סמן גדול",
     "a11y_btn_no_anim": "עצור אנימציות",
     "a11y_reset": "אפס הכל",
-    "a11y_toggle_label": "פתח תפריט נגישות"
+    "a11y_toggle_label": "פתח תפריט נגישות",
+    "home_title1": "אבטחת אישים וייעוץ",
+    "home_title2": "לאבטחה פיזית",
+    "home_intro": "LLISR מספקת אבטחת אישים ותחבורה מאובטחת בישראל. בפרויקטים בחו״ל אנו מציעים ייעוץ לאבטחה פיזית, הערכות סיכונים ותכנון הגנה, עם תיאום תמיכה מקומית בהתאם ליעד ולהיקף העבודה.",
+    "home_primary": "ספרו לנו על צורכי האבטחה",
+    "home_secondary": "לשירותי האבטחה",
+    "home_services": "אבטחה, ייעוץ ונסיעות מאובטחות",
+    "home_israel": "אבטחת אישים בישראל",
+    "home_global": "ייעוץ אבטחה בינלאומי",
+    "home_travel": "נסיעות מאובטחות וליווי משלחות",
+    "home_israel_desc": "אבטחה דיסקרטית למנהלים, משפחות ומשלחות מבקרות.",
+    "home_global_desc": "הערכות סיכונים, סקרי אבטחה ותוכניות פעולה מעשיות.",
+    "home_travel_desc": "תיאום נהגים, מסלולים ולוגיסטיקה לאורך הביקור."
   },
   "fr": {
     "page_title": "Sécurité physique et conseil en sûreté | LLISR",
@@ -518,7 +542,19 @@ const TRANSLATIONS = {
     "aria_7": "E-mail",
     "aria_8": "Réduire le texte",
     "aria_9": "Agrandir le texte",
-    "aria_10": "Fermer"
+    "aria_10": "Fermer",
+    "home_title1": "Protection rapprochée &",
+    "home_title2": "Conseil en sûreté",
+    "home_intro": "LLISR propose la protection rapprochée et le transport sécurisé en Israël. À l’étranger, nous assurons le conseil en sûreté, l’analyse des risques et la planification de la protection, avec un accompagnement local coordonné selon la destination et le périmètre convenu.",
+    "home_primary": "Présentez vos besoins de sécurité",
+    "home_secondary": "Découvrir nos services",
+    "home_services": "Protection, conseil et déplacements sécurisés",
+    "home_israel": "Protection rapprochée en Israël",
+    "home_global": "Conseil en sûreté à l’international",
+    "home_travel": "Déplacements sécurisés et délégations",
+    "home_israel_desc": "Protection discrète des dirigeants, familles et délégations en visite.",
+    "home_global_desc": "Analyses des risques, audits de sites et plans d’action pratiques.",
+    "home_travel_desc": "Chauffeurs, itinéraires et logistique coordonnés pour votre visite."
   },
   "es": {
     "page_title": "Seguridad física y consultoría de seguridad | LLISR",
@@ -704,7 +740,19 @@ const TRANSLATIONS = {
     "aria_7": "Correo",
     "aria_8": "Reducir texto",
     "aria_9": "Ampliar texto",
-    "aria_10": "Cerrar"
+    "aria_10": "Cerrar",
+    "home_title1": "Protección personal y",
+    "home_title2": "Consultoría de seguridad física",
+    "home_intro": "LLISR ofrece protección personal y transporte seguro en Israel. Para proyectos en el extranjero, ofrecemos consultoría de seguridad física, evaluación de riesgos y planificación de la protección, con apoyo local coordinado según el destino y el alcance acordado.",
+    "home_primary": "Cuéntenos sus necesidades de seguridad",
+    "home_secondary": "Explorar los servicios",
+    "home_services": "Protección, consultoría y viajes seguros",
+    "home_israel": "Protección personal en Israel",
+    "home_global": "Consultoría de seguridad internacional",
+    "home_travel": "Viajes seguros y apoyo a delegaciones",
+    "home_israel_desc": "Protección discreta para directivos, familias y delegaciones visitantes.",
+    "home_global_desc": "Evaluación de riesgos, auditorías de instalaciones y planes de acción.",
+    "home_travel_desc": "Conductores, rutas y logística coordinados para su visita."
   }
 };
 
