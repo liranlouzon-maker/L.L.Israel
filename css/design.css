@@ -155,3 +155,6 @@ body.minimal-home, body.content-page { background: #fff; }
 .international-page .service-page-header nav { padding: 0; }
 .international-page h1, .international-page h2, .international-page h3 { font-family: var(--font); }
 .services-header .section-body { margin-inline: 0; text-align: start; }
+#header, #header.scrolled { padding-block: 0; }
+.mobile-drawer { z-index: 120; }
+.drawer-overlay { z-index: 110; }
