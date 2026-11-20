@@ -1,0 +1,35 @@
+/* Approved internal-page photographs and contact controls. */
+
+.theme-jerusalem { --page-photo: url('../images/jerusalem-vehicles.jpg'); }
+.theme-jerusalem #hero, .theme-jerusalem .service-page-hero, .theme-jerusalem #about, .theme-jerusalem #experience {
+ background-image: linear-gradient(90deg,rgba(245,243,238,.96),rgba(245,243,238,.85) 44%,rgba(245,243,238,.25)),var(--page-photo);
+ background-size:cover; background-position:center;
+}
+.theme-jerusalem .hero-bg,.theme-jerusalem .about-bg-overlay,.theme-jerusalem .experience-bg-overlay {display:none;}
+.mobile-drawer {z-index:120;}
+.drawer-overlay {z-index:110;}
+.hero-ci-btn:focus-visible {outline:3px solid #173f73;outline-offset:4px;}
+.hero-ci-btn:hover {filter:brightness(.9);}
+a.btn[href*="wa.me"] {background:#25d366;border-color:#128c4c;color:#072a19;}
+@media(max-width:760px){
+ .contact-strip-inner {gap:.75rem 1rem;}
+ .contact-strip .hero-contact-icons {justify-content:center;}
+ .theme-jerusalem #hero,.theme-jerusalem .service-page-hero,.theme-jerusalem #about,.theme-jerusalem #experience {
+ background-image:linear-gradient(rgba(245,243,238,.77),rgba(245,243,238,.91)),var(--page-photo);}
+}
+/* Messaging services retain their familiar colors. */
+.hero-contact-icons { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; }
+.hero-ci-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; min-width: 44px; min-height: 44px; border: 1px solid transparent; border-radius: 50%; text-decoration: none !important; color: #fff !important; }
+.hero-ci-btn svg { width: 20px; height: 20px; color: #fff; }
+.hero-ci-phone { background: #2563eb; border-color: #1d4ed8; }
+.hero-ci-wa { background: #25d366; border-color: #128c4c; }
+.hero-ci-tg { background: #229ed9; border-color: #1686bc; }
+.hero-ci-sms { background: #5856d6; border-color: #4442b8; }
+.hero-ci-email { background: #174d82; border-color: #0f355b; }
+a[href^="mailto:"] > svg { display: block; width: 20px; height: 20px; flex-shrink: 0; }
+a[href^="mailto:"] { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+.contact-strip { background: #ebe6db; border-block: 1px solid rgba(23,63,115,.14); padding: 1.25rem 1.5rem; color: #173f73; }
+.contact-strip-inner { width: min(1120px,100%); margin-inline: auto; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1rem 2rem; }
+.contact-strip-label { font: 600 1rem/1.5 var(--font, 'DM Sans', system-ui, sans-serif); }
+.contact-strip-phone { font: 600 1rem/1.5 var(--font, 'DM Sans', system-ui, sans-serif); padding-block: .5rem; }
+.contact-strip .hero-contact-icons { gap: .6rem; }
