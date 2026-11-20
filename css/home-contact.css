@@ -16,3 +16,19 @@
 .minimal-home .hero-ci-btn svg {width:19px;height:19px;}
 .minimal-home .hero-ci-btn:focus-visible {outline:3px solid #173f73;outline-offset:4px;}
 .minimal-home .hero-ci-btn:hover {filter:brightness(.9);}
+
+/* Keep the verse small, above the main content in the upper corner. */
+.minimal-home .welcome-hero {position:relative;}
+.minimal-home .welcome-content .hero-scripture {
+ position:absolute;top:6.5rem;right:clamp(1.25rem,4vw,4rem);left:auto;
+ width:min(260px,calc(100% - 2.5rem));margin:0;text-shadow:none;
+}
+.minimal-home .welcome-content .hero-scripture-copy {text-align:right;}
+.minimal-home .welcome-content .hero-scripture-copy p {font-size:.75rem;line-height:1.45;font-weight:400;}
+.minimal-home .welcome-content .hero-scripture-copy cite {font-size:.625rem;margin-top:.3rem;}
+[dir="rtl"] .minimal-home .welcome-content .hero-scripture {left:clamp(1.25rem,4vw,4rem);right:auto;}
+[dir="rtl"] .minimal-home .welcome-content .hero-scripture-copy {text-align:left;}
+@media(max-width:600px){
+ .minimal-home .welcome-hero {padding-top:12rem;}
+ .minimal-home .welcome-content .hero-scripture {top:6.25rem;width:230px;}
+}
