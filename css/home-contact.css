@@ -1,0 +1,18 @@
+/* Compact contact options for landing pages. */
+/* Messaging services retain their familiar colors. */
+.minimal-home .hero-contact-icons { display: flex; flex-wrap: wrap; align-items: center; gap: .65rem; }
+.minimal-home .hero-ci-btn { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; min-width: 44px; min-height: 44px; border: 1px solid transparent; border-radius: 50%; text-decoration: none !important; color: #fff !important; }
+.minimal-home .hero-ci-btn svg { width: 20px; height: 20px; color: #fff; }
+.minimal-home .hero-ci-phone { background: #2563eb; border-color: #1d4ed8; }
+.minimal-home .hero-ci-wa { background: #25d366; border-color: #128c4c; }
+.minimal-home .hero-ci-tg { background: #229ed9; border-color: #1686bc; }
+.minimal-home .hero-ci-sms { background: #5856d6; border-color: #4442b8; }
+.minimal-home .hero-ci-email { background: #174d82; border-color: #0f355b; }
+.minimal-home a[href^="mailto:"] > svg { display: block; width: 20px; height: 20px; flex-shrink: 0; }
+.minimal-home a[href^="mailto:"] { min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
+
+.minimal-home .home-contact-options {justify-content:center;margin:1.25rem auto;gap:.6rem;}
+.minimal-home .hero-ci-btn {width:44px;height:44px;padding:0;box-sizing:border-box;flex-shrink:0;}
+.minimal-home .hero-ci-btn svg {width:19px;height:19px;}
+.minimal-home .hero-ci-btn:focus-visible {outline:3px solid #173f73;outline-offset:4px;}
+.minimal-home .hero-ci-btn:hover {filter:brightness(.9);}
