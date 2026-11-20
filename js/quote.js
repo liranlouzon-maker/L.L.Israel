@@ -123,7 +123,7 @@
   }
   function showFallback() {
     const body = contactMessage();
-    get('quote-email').href = `mailto:liran@llisr.com?subject=${encodeURIComponent(copy.summarytitle)}&body=${encodeURIComponent(body)}`;
+    get('quote-email').href = `mailto:liranlouzon@gmail.com?subject=${encodeURIComponent(copy.summarytitle)}&body=${encodeURIComponent(body)}`;
     get('quote-whatsapp').href = `https://wa.me/972523954958?text=${encodeURIComponent(body)}`;
     get('quote-fallback').hidden = false;
   }
