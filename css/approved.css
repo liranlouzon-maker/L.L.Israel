@@ -33,3 +33,10 @@ a[href^="mailto:"] { min-width: 44px; min-height: 44px; display: inline-flex; al
 .contact-strip-label { font: 600 1rem/1.5 var(--font, 'DM Sans', system-ui, sans-serif); }
 .contact-strip-phone { font: 600 1rem/1.5 var(--font, 'DM Sans', system-ui, sans-serif); padding-block: .5rem; }
 .contact-strip .hero-contact-icons { gap: .6rem; }
+
+/* The same contact controls appear at the start of each service page. */
+.service-contact-row { margin-top: 1.5rem; text-align: center; }
+.service-contact-label { color: var(--color-text, #173f73); font-weight: 600; }
+.service-contact-options { justify-content: center; margin: .75rem auto 0; gap: .6rem; }
+.service-contact-options .hero-ci-btn { width: 44px; height: 44px; padding: 0; box-sizing: border-box; flex-shrink: 0; }
+.service-contact-options .hero-ci-btn svg { width: 19px; height: 19px; }
