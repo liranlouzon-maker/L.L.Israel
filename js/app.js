@@ -91,8 +91,8 @@ const TRANSLATIONS = {
     "exp_badge3": "International Operations",
     "faq_tag": "Frequently Asked Questions",
     "faq_title": "Questions & Answers",
-    "faq1_q": "In which countries do you operate?",
-    "faq1_a": "We are based in Israel and operate in many countries through our professional colleagues and network. Contact us to check whether we can provide the required service in the relevant country.",
+    "faq1_q": "How do you operate in other countries?",
+    "faq1_a": "We work with a network of professional contacts and colleagues in many countries. As needed, we research the market, assess and compare providers and services, and negotiate to identify the best solution for the client’s needs. In certain countries, depending on the scope of the project, we send our own representative to manage the operation and supervise delivery on the ground.",
     "faq2_q": "Who are your service providers and partners?",
     "faq2_a": "Our security personnel are trained, experienced professionals with backgrounds in law enforcement. All our partners across every field operate at the highest level.",
     "faq4_q": "How do you tailor your service to each client?",
@@ -203,7 +203,11 @@ const TRANSLATIONS = {
     "home_travel": "Secure Travel & Delegation Support",
     "home_israel_desc": "Discreet protection for executives, families and visiting delegations.",
     "home_global_desc": "Risk assessments, site security surveys and practical action plans.",
-    "home_travel_desc": "Drivers, routes and logistics coordinated around your visit."
+    "home_travel_desc": "Drivers, routes and logistics coordinated around your visit.",
+    "approved_faq_combined_q": "Can security, a private driver, trip planning and concierge services be combined?",
+    "approved_faq_combined_a": "Yes. Services can be combined around your needs and itinerary, with coordinated planning of the security, transportation, travel and concierge support required.",
+    "approved_faq_risk_q": "What does a risk assessment before a trip or event include?",
+    "approved_faq_risk_a": "A risk assessment reviews the destination, travel route or event venue, the planned activities and relevant threats. The findings inform recommendations for security, transportation and operations, tailored to the client’s needs."
   },
   "he": {
     "page_title": "שירותי אבטחה ישראליים ואבטחת אישים | LLISR",
@@ -289,8 +293,8 @@ const TRANSLATIONS = {
     "exp_badge3": "פעילות בינלאומית",
     "faq_tag": "שאלות נפוצות",
     "faq_title": "שאלות ותשובות",
-    "faq1_q": "באילו מדינות אתם פועלים?",
-    "faq1_a": "אנו מבוססים בישראל ופועלים במדינות רבות באמצעות עמיתים וקשרים מקצועיים. ניתן ליצור איתנו קשר כדי לבדוק אם נוכל לספק את השירות הנדרש במדינה הרלוונטית.",
+    "faq1_q": "איך אתם פועלים במדינות אחרות?",
+    "faq1_a": "אנחנו עובדים עם רשת קשרים וקולגות במדינות רבות. בהתאם לצורך, אנו מבצעים סקרי שוק, בוחנים ומשווים ספקים ושירותים ומנהלים משא ומתן, כדי להתאים ללקוח את הפתרון הטוב ביותר לצרכיו. במדינות מסוימות ובהתאם להיקף הפרויקט, אנו שולחים נציג מטעמנו שמנהל את הפעילות ומפקח על הביצוע בשטח.",
     "faq2_q": "מי הם נותני השירות והספקים שלכם?",
     "faq2_a": "צוותי האבטחה וספקי השירות שלנו מורכבים ממקצוענים ובעלי ניסיון יוצאי מערכות החוק ובעלי ניסיון בתחומם. השותפים שלנו כולם ברמה הגבוהה ביותר.",
     "faq4_q": "כיצד אתם מתאימים את השירות לכל לקוח?",
@@ -356,7 +360,11 @@ const TRANSLATIONS = {
     "home_travel": "נסיעות מאובטחות וליווי משלחות",
     "home_israel_desc": "אבטחה דיסקרטית למנהלים, משפחות ומשלחות מבקרות.",
     "home_global_desc": "הערכות סיכונים, סקרי אבטחה ותוכניות פעולה מעשיות.",
-    "home_travel_desc": "תיאום נהגים, מסלולים ולוגיסטיקה לאורך הביקור."
+    "home_travel_desc": "תיאום נהגים, מסלולים ולוגיסטיקה לאורך הביקור.",
+    "approved_faq_combined_q": "האם ניתן לשלב אבטחה, נהג פרטי, תכנון טיול ושירותי קונסיירז׳?",
+    "approved_faq_combined_a": "כן. ניתן לשלב את השירותים בהתאם לצורכי הלקוח ולתכנית הביקור, עם תיאום מרוכז של האבטחה, התחבורה, הטיול ושירותי הקונסיירז׳ הנדרשים.",
+    "approved_faq_risk_q": "מה כוללת הערכת סיכונים לפני נסיעה או אירוע?",
+    "approved_faq_risk_a": "הערכת הסיכונים כוללת בחינה של היעד, מסלול הנסיעה או מקום האירוע, מאפייני הפעילות והאיומים הרלוונטיים. על בסיס הממצאים מגבשים המלצות לאבטחה, לתחבורה ולתפעול, בהתאם לצורכי הלקוח."
   },
   "fr": {
     "page_title": "Sécurité physique et conseil en sûreté | LLISR",
@@ -441,8 +449,8 @@ const TRANSLATIONS = {
     "exp_badge3": "Missions internationales",
     "faq_tag": "Questions fréquentes",
     "faq_title": "Questions et réponses",
-    "faq1_q": "Dans quels pays intervenez-vous ?",
-    "faq1_a": "Nous sommes basés en Israël et accompagnons des projets dans plusieurs pays grâce à notre réseau professionnel. Contactez-nous pour vérifier la disponibilité du service souhaité dans la destination concernée.",
+    "faq1_q": "Comment intervenez-vous dans d’autres pays ?",
+    "faq1_a": "Nous travaillons avec un réseau de contacts professionnels et de collègues dans de nombreux pays. Selon les besoins, nous réalisons des études de marché, évaluons et comparons les prestataires et les services, et négocions pour trouver la solution la mieux adaptée au client. Dans certains pays et selon l’ampleur du projet, nous envoyons notre propre représentant pour gérer les opérations et superviser leur réalisation sur place.",
     "faq2_q": "Qui sont vos prestataires ?",
     "faq2_a": "Nos professionnels de la sécurité disposent d’une formation et d’une expérience opérationnelle, notamment dans les forces de l’ordre. Les prestataires sont sélectionnés selon les besoins du projet et les exigences locales.",
     "faq4_q": "Comment adaptez-vous le service à chaque client ?",
@@ -554,7 +562,11 @@ const TRANSLATIONS = {
     "home_travel": "Déplacements sécurisés et délégations",
     "home_israel_desc": "Protection discrète des dirigeants, familles et délégations en visite.",
     "home_global_desc": "Analyses des risques, audits de sites et plans d’action pratiques.",
-    "home_travel_desc": "Chauffeurs, itinéraires et logistique coordonnés pour votre visite."
+    "home_travel_desc": "Chauffeurs, itinéraires et logistique coordonnés pour votre visite.",
+    "approved_faq_combined_q": "Peut-on combiner sécurité, chauffeur privé, organisation de voyages et conciergerie ?",
+    "approved_faq_combined_a": "Oui. Les services peuvent être combinés selon vos besoins et votre programme, avec une coordination de la sécurité, du transport, du voyage et des prestations de conciergerie nécessaires.",
+    "approved_faq_risk_q": "Que comprend une évaluation des risques avant un voyage ou un événement ?",
+    "approved_faq_risk_a": "L’évaluation examine la destination, l’itinéraire ou le lieu de l’événement, les activités prévues et les menaces pertinentes. Les conclusions permettent de formuler des recommandations en matière de sécurité, de transport et d’organisation, adaptées aux besoins du client."
   },
   "es": {
     "page_title": "Seguridad física y consultoría de seguridad | LLISR",
@@ -639,8 +651,8 @@ const TRANSLATIONS = {
     "exp_badge3": "Proyectos internacionales",
     "faq_tag": "Preguntas frecuentes",
     "faq_title": "Preguntas y respuestas",
-    "faq1_q": "¿En qué países trabajan?",
-    "faq1_a": "Tenemos nuestra sede en Israel y apoyamos proyectos en distintos países a través de nuestra red profesional. Contáctenos para comprobar la disponibilidad del servicio que necesita en el destino correspondiente.",
+    "faq1_q": "¿Cómo trabajan en otros países?",
+    "faq1_a": "Trabajamos con una red de contactos profesionales y colegas en numerosos países. Según las necesidades, realizamos estudios de mercado, evaluamos y comparamos proveedores y servicios, y negociamos para encontrar la solución más adecuada para el cliente. En determinados países y según el alcance del proyecto, enviamos a nuestro propio representante para dirigir las operaciones y supervisar su ejecución sobre el terreno.",
     "faq2_q": "¿Quiénes son sus proveedores?",
     "faq2_a": "Nuestros profesionales de seguridad cuentan con formación y experiencia operativa, incluida experiencia en las fuerzas del orden. Los proveedores se seleccionan según las necesidades del proyecto y los requisitos locales.",
     "faq4_q": "¿Cómo adaptan el servicio a cada cliente?",
@@ -752,7 +764,11 @@ const TRANSLATIONS = {
     "home_travel": "Viajes seguros y apoyo a delegaciones",
     "home_israel_desc": "Protección discreta para directivos, familias y delegaciones visitantes.",
     "home_global_desc": "Evaluación de riesgos, auditorías de instalaciones y planes de acción.",
-    "home_travel_desc": "Conductores, rutas y logística coordinados para su visita."
+    "home_travel_desc": "Conductores, rutas y logística coordinados para su visita.",
+    "approved_faq_combined_q": "¿Se pueden combinar seguridad, conductor privado, planificación de viajes y servicios de concierge?",
+    "approved_faq_combined_a": "Sí. Los servicios pueden combinarse según sus necesidades e itinerario, con una coordinación de la seguridad, el transporte, el viaje y los servicios de concierge necesarios.",
+    "approved_faq_risk_q": "¿Qué incluye una evaluación de riesgos antes de un viaje o evento?",
+    "approved_faq_risk_a": "La evaluación examina el destino, la ruta o el lugar del evento, las actividades previstas y las amenazas pertinentes. Los resultados permiten formular recomendaciones de seguridad, transporte y operaciones, adaptadas a las necesidades del cliente."
   }
 };
 
